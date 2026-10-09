@@ -12,15 +12,16 @@ export interface ReachStateConfig {
 
 export const REACH_STATES: ReachStateConfig[] = [
   { id: "IN-TG", name: "Telangana", region: "South", delay: 0 },
-  { id: "IN-AP", name: "Andhra Pradesh", region: "South", delay: 160 },
-  { id: "IN-KA", name: "Karnataka", region: "South", delay: 320 },
-  { id: "IN-TN", name: "Tamil Nadu", region: "South", delay: 480 },
-  { id: "IN-KL", name: "Kerala", region: "South", delay: 640 },
-  { id: "IN-MH", name: "Maharashtra", region: "West", delay: 800 },
-  { id: "IN-OR", name: "Odisha", region: "East", delay: 960 },
+  { id: "IN-AP", name: "Andhra Pradesh", region: "South", delay: 140 },
+  { id: "IN-KA", name: "Karnataka", region: "South", delay: 280 },
+  { id: "IN-TN", name: "Tamil Nadu", region: "South", delay: 420 },
+  { id: "IN-KL", name: "Kerala", region: "South", delay: 560 },
+  { id: "IN-MH", name: "Maharashtra", region: "West", delay: 700 },
+  { id: "IN-OR", name: "Odisha", region: "East", delay: 840 },
+  { id: "IN-JH", name: "Jharkhand", region: "East", delay: 980 },
   { id: "IN-UP", name: "Uttar Pradesh", region: "North", delay: 1120 },
-  { id: "IN-BR", name: "Bihar", region: "North", delay: 1280 },
-  { id: "IN-DL", name: "Delhi", region: "North", delay: 1440 },
+  { id: "IN-BR", name: "Bihar", region: "North", delay: 1260 },
+  { id: "IN-DL", name: "Delhi", region: "North", delay: 1400 },
 ];
 
 const REACH_STATE_IDS = new Set(REACH_STATES.map((s) => s.id));
@@ -62,6 +63,14 @@ export const REACH_STATE_LABELS: ReachLabelConfig[] = [
     x: 355,
     y: 272,
     fontSize: 11.5,
+  },
+  // Jharkhand: Centered in the Chota Nagpur plateau
+  {
+    id: "IN-JH",
+    name: "Jharkhand",
+    x: 360,
+    y: 326,
+    fontSize: 10,
   },
   // Andhra Pradesh: Stacked vertically to follow the coastal geography symmetrically
   {

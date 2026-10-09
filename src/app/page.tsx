@@ -3,9 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import MetricsSection from "@/components/MetricsSection";
 import UspSection from "@/components/UspSection";
 import LearnerAgencySection from "@/components/LearnerAgencySection";
-import LearningModelSection from "@/components/LearningModelSection";
 import ImpactSection from "@/components/ImpactSection";
-import GeographySection from "@/components/GeographySection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import FutureActionSection from "@/components/FutureActionSection";
 import Footer from "@/components/Footer";
@@ -25,17 +23,11 @@ export default function Home() {
       {/* Core Proposition / USP Section */}
       <UspSection />
 
-      {/* Section 3: Learner Agency Section */}
+      {/* Merged Pedagogical Engine & Outcome: The Ignis Learning Model + Learner Agency */}
       <LearnerAgencySection />
 
-      {/* Section 4: The Ignis Learning Model (From knowledge to capability) */}
-      <LearningModelSection />
-
-      {/* Section 5: Impact Numbers (12 years of learning in the real world) */}
+      {/* Section 5: Impact & Geographic Scale (12 years of learning in the real world + India Vector Map) */}
       <ImpactSection />
-
-      {/* Section 6: Geographic Spread (Learning across different contexts) */}
-      <GeographySection />
 
       {/* Section 7: Programmes (What we build) */}
       <ProgrammesSection />
