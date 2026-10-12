@@ -81,7 +81,7 @@ export default function UspSection() {
             </h2>
 
             {/* Narrative Paragraphs */}
-            <div className="space-y-4 text-[16px] sm:text-[17px] leading-[1.7] text-[#334155] font-normal mb-8">
+            <div className="space-y-4 text-sm sm:text-[15px] leading-relaxed text-[#556987] font-normal mb-8">
               <p>
                 Young people need more than knowledge to navigate education, work and everyday life. They need to be able to communicate, think critically, make decisions, solve problems, understand themselves and work with others.
               </p>

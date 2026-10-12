@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import IndiaVectorMap from "./IndiaVectorMap";
 
 interface CounterProps {
   target: number;
@@ -62,6 +63,8 @@ function StatCounter({ target, suffix = "", duration = 2000 }: CounterProps) {
 }
 
 export default function MetricsSection() {
+  const [selectedState, setSelectedState] = useState<string | null>(null);
+
   const proofPoints = [
     {
       value: 12,
@@ -73,33 +76,44 @@ export default function MetricsSection() {
       suffix: "+",
       label: "learners reached directly and through partners",
     },
-    {
-      staticText: "India-wide",
-      label: "work across multiple states and education systems",
-    },
   ];
 
   return (
-    <section className="relative w-full bg-white border-b border-[#E8E2D7] py-12 sm:py-16">
-      <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-16">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-0 sm:divide-x sm:divide-[#E2DDD5]">
-          {proofPoints.map((point, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center px-4 sm:px-6 lg:px-10"
-            >
-              <div className="font-serif text-[34px] sm:text-[40px] lg:text-[46px] font-bold text-[#04315D] tracking-tight leading-none mb-2.5">
-                {point.value !== undefined ? (
+    <section className="relative w-full bg-white border-b border-[#E8E2D7] py-14 sm:py-18 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          
+          {/* Left Column: Two Key Numbers Centered */}
+          <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-10 sm:divide-x sm:divide-[#E2DDD5]">
+            {proofPoints.map((point, index) => (
+              <div
+                key={index}
+                className={`flex flex-col items-center text-center ${
+                  index > 0 ? "sm:pl-8 lg:pl-10" : ""
+                }`}
+              >
+                <div className="font-serif text-[42px] sm:text-[48px] lg:text-[54px] font-bold text-[#04315D] tracking-tight leading-none mb-3">
                   <StatCounter target={point.value} suffix={point.suffix} />
-                ) : (
-                  <span>{point.staticText}</span>
-                )}
+                </div>
+                <div className="text-[14.5px] sm:text-[15.5px] text-[#4A5568] leading-[1.5] max-w-[240px] font-medium mx-auto">
+                  {point.label}
+                </div>
               </div>
-              <div className="text-[13.5px] sm:text-[14.5px] text-[#4A5568] leading-[1.5] max-w-[280px] font-medium mx-auto">
-                {point.label}
-              </div>
+            ))}
+          </div>
+
+          {/* Right Column: India Vector Map Graphic Centered across all screens (Compact scale) */}
+          <div className="w-full flex justify-center items-center overflow-hidden">
+            <div className="w-full max-w-[240px] xs:max-w-[270px] sm:max-w-[340px] lg:max-w-[390px] mx-auto flex justify-center items-center translate-x-4 lg:translate-x-0">
+              <IndiaVectorMap
+                selectedState={selectedState}
+                onSelectState={setSelectedState}
+                autoPlay={true}
+                className="w-full"
+              />
             </div>
-          ))}
+          </div>
+
         </div>
       </div>
     </section>

@@ -67,7 +67,7 @@ export default function FutureActionSection() {
           </h2>
 
           {/* Subhead (Exact Client Copy) */}
-          <p className="text-[16px] sm:text-[19px] text-[#475569] leading-[1.65] max-w-2xl mx-auto mb-9 font-normal">
+          <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed max-w-2xl mx-auto mb-9 font-normal">
             We believe it can—when learning gives young people not just knowledge, but the confidence and capability to use it.
           </p>
 

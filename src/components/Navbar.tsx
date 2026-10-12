@@ -9,6 +9,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { label: "Impact", href: "/impact" },
     { label: "CSR Support", href: "/csr-support" },
   ];
 

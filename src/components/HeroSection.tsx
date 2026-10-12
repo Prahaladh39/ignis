@@ -46,7 +46,7 @@ export default function HeroSection() {
             </h1>
 
             {/* Sub-head Paragraph */}
-            <p className="text-[16px] sm:text-[17.5px] leading-[1.65] text-[#334155] max-w-[520px] font-normal mb-8 sm:mb-9">
+            <p className="text-sm sm:text-[15px] leading-relaxed text-[#556987] max-w-[520px] font-normal mb-8 sm:mb-9">
               Ignis integrates Life Skills with English, Science and Maths to help young learners build knowledge, confidence and agency to make decisions, solve problems, communicate and participate in the world around them.
             </p>
 
