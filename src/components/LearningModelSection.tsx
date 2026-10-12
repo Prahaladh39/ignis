@@ -51,7 +51,10 @@ export default function LearningModelSection() {
   ];
 
   return (
-    <section className="relative w-full bg-white border-b border-[#E8E2D7] py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section
+      id="model"
+      className="relative w-full bg-white border-b border-[#E8E2D7] py-16 sm:py-20 lg:py-24 overflow-hidden"
+    >
       
       {/* Subtle ambient background warmth */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#F8F5EF] rounded-full blur-3xl opacity-70 pointer-events-none" />

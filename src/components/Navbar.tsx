@@ -9,12 +9,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "The Ignis Model", href: "#model" },
-    { label: "Impact", href: "#impact" },
-    { label: "Programmes", href: "#programmes" },
-    { label: "Research & Evidence", href: "#evidence" },
-    { label: "Technology", href: "#technology" },
-    { label: "Work With Us", href: "#work-with-us" },
+    { label: "CSR Support", href: "/csr-support" },
   ];
 
   return (
@@ -45,10 +40,10 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Right CTA Button */}
+        {/* Right CTA Button (Desktop & Tablets) */}
         <div className="hidden sm:flex items-center">
           <Link
-            href="#partner"
+            href="#work-with-us"
             className="inline-flex items-center gap-2 bg-[#A21246] hover:bg-[#860E3A] text-white text-[14px] font-medium px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200 group"
           >
             <span>Partner with Ignis</span>
@@ -59,7 +54,7 @@ export default function Navbar() {
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-[#04315D] hover:bg-[#EAE4D7] rounded-lg transition-colors"
+          className="lg:hidden p-2 text-[#04315D] hover:bg-[#EAE4D7] rounded-lg transition-colors cursor-pointer"
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -82,7 +77,7 @@ export default function Navbar() {
             ))}
             <div className="pt-2">
               <Link
-                href="#partner"
+                href="#work-with-us"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full inline-flex justify-center items-center gap-2 bg-[#A21246] hover:bg-[#860E3A] text-white text-[15px] font-medium px-6 py-3 rounded-full shadow transition-colors"
               >

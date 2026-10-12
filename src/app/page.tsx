@@ -2,11 +2,12 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import MetricsSection from "@/components/MetricsSection";
 import UspSection from "@/components/UspSection";
-import LearnerAgencySection from "@/components/LearnerAgencySection";
+import LearningModelSection from "@/components/LearningModelSection";
 import ImpactSection from "@/components/ImpactSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import FutureActionSection from "@/components/FutureActionSection";
 import Footer from "@/components/Footer";
+import FloatingCta from "@/components/FloatingCta";
 
 export default function Home() {
   return (
@@ -23,8 +24,8 @@ export default function Home() {
       {/* Core Proposition / USP Section */}
       <UspSection />
 
-      {/* Merged Pedagogical Engine & Outcome: The Ignis Learning Model + Learner Agency */}
-      <LearnerAgencySection />
+      {/* The Ignis Learning Model (From knowledge to capability) */}
+      <LearningModelSection />
 
       {/* Section 5: Impact & Geographic Scale (12 years of learning in the real world + India Vector Map) */}
       <ImpactSection />
@@ -34,6 +35,9 @@ export default function Home() {
 
       {/* Section 8: Final Action (Can education help young people shape their own futures?) */}
       <FutureActionSection />
+
+      {/* Floating Sticky CTA on Scroll */}
+      <FloatingCta />
 
       {/* Institutional Footer */}
       <Footer />

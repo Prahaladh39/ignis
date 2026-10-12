@@ -41,6 +41,53 @@
   animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Gentle subtle floating animation for background icons */
+@keyframes subtleFloatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes subtleFloatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-2deg);
+  }
+}
+
+.animate-float-slow {
+  animation: subtleFloatSlow 8s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: subtleFloatReverse 9s ease-in-out infinite;
+}
+
 /* Custom smooth scrollbar if needed */
 ::selection {
   background-color: #A21246;

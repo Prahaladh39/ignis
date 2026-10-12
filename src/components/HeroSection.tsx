@@ -64,7 +64,7 @@ export default function HeroSection() {
                 href="#work-with-us"
                 className="inline-flex items-center justify-center gap-2.5 border border-[#04315D]/30 hover:border-[#04315D] bg-transparent hover:bg-[#04315D]/5 text-[#04315D] text-[15px] font-medium px-7 sm:px-8 py-3.5 rounded-full transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Work with Ignis</span>
+                <span>Partner with Ignis</span>
                 <ArrowRight className="w-4 h-4 opacity-75" />
               </Link>
             </div>
