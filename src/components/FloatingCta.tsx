@@ -28,7 +28,7 @@ export default function FloatingCta() {
   return (
     <aside
       aria-label="Quick Actions"
-      className="sm:hidden fixed bottom-5 right-5 z-40 animate-in fade-in slide-in-from-bottom-3 duration-300"
+      className="sm:hidden fixed bottom-6 right-5 z-40 animate-in fade-in slide-in-from-bottom-3 duration-300"
     >
       <Link
         href="#work-with-us"

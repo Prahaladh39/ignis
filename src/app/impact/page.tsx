@@ -148,7 +148,7 @@ export default function ImpactPage() {
       <Navbar />
 
       {/* SECTION 01 — IMPACT AT SCALE */}
-      <section className="relative w-full py-16 sm:py-24 lg:py-28 overflow-hidden">
+      <section id="impact-at-scale" className="scroll-mt-20 lg:scroll-mt-24 relative w-full py-8 sm:py-10 lg:py-12 overflow-hidden">
         {/* Subtle radial ambient gradients for an editorial feel */}
         <div className="absolute top-0 right-10 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-80 pointer-events-none" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#A21246]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
@@ -156,7 +156,7 @@ export default function ImpactPage() {
         <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
           {/* Section Marker Tag */}
-          <div className="flex items-center gap-2.5 mb-8 sm:mb-10">
+          <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
             <span className="w-8 h-[2px] bg-[#A21246]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#A21246]">
               01 — IMPACT AT SCALE
@@ -164,23 +164,23 @@ export default function ImpactPage() {
           </div>
 
           {/* 2-Column Split: Editorial Narrative on Left | Metric Pillar Cards on Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             
             {/* LEFT COLUMN (Span 6): Narrative */}
             <div className="lg:col-span-6 flex flex-col justify-start">
               {/* Main Headline */}
-              <h1 className="font-serif text-[38px] sm:text-[48px] lg:text-[56px] leading-[1.12] tracking-[-0.025em] text-[#04315D] font-normal mb-8">
+              <h1 className="font-serif text-[34px] sm:text-[44px] lg:text-[50px] leading-[1.12] tracking-[-0.025em] text-[#04315D] font-normal mb-5">
                 Learning at scale. <br className="hidden sm:inline" />
                 <span className="italic font-serif text-[#A21246]">Impact that compounds.</span>
               </h1>
 
               {/* Lead Paragraph */}
-              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
+              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-3.5">
                 Ignis is building a scalable learning ecosystem that enables large numbers of learners to access sustained, meaningful learning experiences.
               </p>
 
               {/* Supporting Evidence Paragraph */}
-              <div className="relative pl-5 sm:pl-6 border-l-2 border-[#A21246]/40 py-1">
+              <div className="relative pl-4 sm:pl-5 border-l-2 border-[#A21246]/40 py-0.5">
                 <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
                   With $450,000 in investment Ignis has reached 604,000+ learners—404,000+ directly and more than 200,000+ through partner organisations.
                 </p>
@@ -188,19 +188,19 @@ export default function ImpactPage() {
             </div>
 
             {/* RIGHT COLUMN (Span 6): Structured Metric Display (No hover effects, animated Counter-Up) */}
-            <div className="lg:col-span-6 flex flex-col gap-3.5 sm:gap-4 max-w-[480px] w-full lg:ml-auto">
+            <div className="lg:col-span-6 flex flex-col gap-3 max-w-[480px] w-full lg:ml-auto">
               
               {/* Card 1: 604K+ Learners reached */}
-              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-5 shadow-2xs flex flex-col justify-between">
-                <div className="flex items-baseline justify-between mb-1.5">
-                  <div className="font-serif text-[32px] sm:text-[36px] font-bold tracking-tight leading-none text-[#A21246]">
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-4.5 shadow-2xs flex flex-col justify-between">
+                <div className="flex items-baseline justify-between mb-1">
+                  <div className="font-serif text-[30px] sm:text-[34px] font-bold tracking-tight leading-none text-[#A21246]">
                     <CounterUpNumber to={604} suffix="K+" duration={1800} />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-semibold tracking-wider uppercase">
+                  <span className="text-[10px] font-mono text-[#94A3B8] font-semibold tracking-wider uppercase">
                     01
                   </span>
                 </div>
-                <div className="text-[14.5px] sm:text-[15.5px] font-medium text-[#04315D] leading-snug mb-2.5">
+                <div className="text-[14px] sm:text-[14.5px] font-medium text-[#04315D] leading-snug mb-2">
                   Learners reached
                 </div>
                 <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden">
@@ -209,16 +209,16 @@ export default function ImpactPage() {
               </div>
 
               {/* Card 2: 80–120 Hours of learning per learner, per year */}
-              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-5 shadow-2xs flex flex-col justify-between">
-                <div className="flex items-baseline justify-between mb-1.5">
-                  <div className="font-serif text-[32px] sm:text-[36px] font-bold tracking-tight leading-none text-[#04315D]">
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-4.5 shadow-2xs flex flex-col justify-between">
+                <div className="flex items-baseline justify-between mb-1">
+                  <div className="font-serif text-[30px] sm:text-[34px] font-bold tracking-tight leading-none text-[#04315D]">
                     <RangeCounterUp startTo={80} endTo={120} duration={1800} />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-semibold tracking-wider uppercase">
+                  <span className="text-[10px] font-mono text-[#94A3B8] font-semibold tracking-wider uppercase">
                     02
                   </span>
                 </div>
-                <div className="text-[14.5px] sm:text-[15.5px] font-medium text-[#04315D] leading-snug mb-2.5">
+                <div className="text-[14px] sm:text-[14.5px] font-medium text-[#04315D] leading-snug mb-2">
                   Hours of learning per learner, per year
                 </div>
                 <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden">
@@ -227,16 +227,16 @@ export default function ImpactPage() {
               </div>
 
               {/* Card 3: 48–72M Estimated annual learner-hours */}
-              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-5 shadow-2xs flex flex-col justify-between">
-                <div className="flex items-baseline justify-between mb-1.5">
-                  <div className="font-serif text-[32px] sm:text-[36px] font-bold tracking-tight leading-none text-[#107C68]">
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-4.5 shadow-2xs flex flex-col justify-between">
+                <div className="flex items-baseline justify-between mb-1">
+                  <div className="font-serif text-[30px] sm:text-[34px] font-bold tracking-tight leading-none text-[#107C68]">
                     <RangeCounterUp startTo={48} endTo={72} suffix="M" duration={1800} />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-semibold tracking-wider uppercase">
+                  <span className="text-[10px] font-mono text-[#94A3B8] font-semibold tracking-wider uppercase">
                     03
                   </span>
                 </div>
-                <div className="text-[14.5px] sm:text-[15.5px] font-medium text-[#04315D] leading-snug mb-2.5">
+                <div className="text-[14px] sm:text-[14.5px] font-medium text-[#04315D] leading-snug mb-2">
                   Estimated annual learner-hours
                 </div>
                 <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden">
@@ -255,7 +255,7 @@ export default function ImpactPage() {
       {/* SECTION 02 — REACH × DEPTH                                     */}
       {/* Left: Blended Image | Right: Managed Editorial Content         */}
       {/* ============================================================== */}
-      <section className="relative w-full bg-[#F2EDE2]/60 border-t border-[#E8E2D7] py-20 sm:py-28 overflow-hidden">
+      <section id="reach-depth" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#F2EDE2]/60 border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
         {/* Soft background light blooms */}
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#04315D]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
@@ -263,7 +263,7 @@ export default function ImpactPage() {
         <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
           {/* Section Marker */}
-          <div className="flex items-center gap-2.5 mb-8 sm:mb-12">
+          <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
             <span className="w-8 h-[2px] bg-[#04315D]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#04315D]">
               02 — REACH × DEPTH
@@ -271,18 +271,18 @@ export default function ImpactPage() {
           </div>
 
           {/* 2-Column Balanced Editorial Structure: Cards on Left | Narrative on Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             
             {/* LEFT COLUMN (Span 6): Depth & Reach Metric Cards */}
-            <div className="lg:col-span-6 flex flex-col gap-5 sm:gap-6">
+            <div className="lg:col-span-6 flex flex-col gap-3.5 sm:gap-4">
               
               {/* Highlight Callout: 80–120 hours per learner, per year */}
-              <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 shadow-xs">
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#A21246] font-bold block mb-2">
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-[#A21246] font-bold block mb-1.5">
                   Learning Depth
                 </span>
-                <p className="text-[17px] sm:text-[19px] text-[#04315D] font-medium leading-[1.45] mb-4">
-                  Our programmes typically provide <span className="font-bold text-[#A21246] font-serif text-[24px] sm:text-[26px]">80–120 hours</span> of learning activities per learner each year.
+                <p className="text-[16px] sm:text-[17.5px] text-[#04315D] font-medium leading-[1.4] mb-3">
+                  Our programmes typically provide <span className="font-bold text-[#A21246] font-serif text-[22px] sm:text-[24px]">80–120 hours</span> of learning activities per learner each year.
                 </p>
                 <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden">
                   <div className="h-full bg-[#A21246] w-20" />
@@ -290,37 +290,37 @@ export default function ImpactPage() {
               </div>
 
               {/* Annual Exposure Box */}
-              <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 shadow-xs">
-                <p className="text-[12px] font-mono uppercase tracking-wider text-[#64748B] mb-2 font-semibold">
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
+                <p className="text-[11px] font-mono uppercase tracking-wider text-[#64748B] mb-1.5 font-semibold">
                   Across 604,000+ learners, this represents an estimated:
                 </p>
-                <div className="font-serif text-[42px] sm:text-[48px] font-bold text-[#04315D] tracking-tight leading-none mb-2">
+                <div className="font-serif text-[36px] sm:text-[42px] font-bold text-[#04315D] tracking-tight leading-none mb-1.5">
                   48–72 million
                 </div>
-                <p className="text-[15px] sm:text-[16px] text-[#475569] leading-snug">
+                <p className="text-[14px] sm:text-[15px] text-[#475569] leading-snug">
                   Learner-hours of annual learning exposure
                 </p>
               </div>
 
               {/* Our Reach Breakdown Card */}
-              <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 shadow-xs">
-                <div className="text-[11px] font-mono uppercase tracking-wider text-[#107C68] font-bold mb-4">
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
+                <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#107C68] font-bold mb-3">
                   Our reach
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D7]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D7]">
                   <div className="flex flex-col">
-                    <span className="font-serif text-[32px] sm:text-[36px] font-bold text-[#04315D] leading-none mb-1.5">
+                    <span className="font-serif text-[28px] sm:text-[32px] font-bold text-[#04315D] leading-none mb-1">
                       404K+
                     </span>
-                    <span className="text-[14px] text-[#475569] leading-snug">
+                    <span className="text-[13.5px] text-[#475569] leading-snug">
                       Learners reached directly
                     </span>
                   </div>
-                  <div className="flex flex-col pt-4 sm:pt-0 sm:pl-6">
-                    <span className="font-serif text-[32px] sm:text-[36px] font-bold text-[#107C68] leading-none mb-1.5">
+                  <div className="flex flex-col pt-3 sm:pt-0 sm:pl-5">
+                    <span className="font-serif text-[28px] sm:text-[32px] font-bold text-[#107C68] leading-none mb-1">
                       200K+
                     </span>
-                    <span className="text-[14px] text-[#475569] leading-snug">
+                    <span className="text-[13.5px] text-[#475569] leading-snug">
                       Learners reached through partner organisations
                     </span>
                   </div>
@@ -333,24 +333,24 @@ export default function ImpactPage() {
             <div className="lg:col-span-6 flex flex-col justify-start">
               
               {/* Main Section Headline */}
-              <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-6">
+              <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-4">
                 We measure more than the number of learners reached.
               </h2>
 
               {/* Sub-paragraph */}
-              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-6">
+              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
                 Impact is not only about how many people experience a programme. It is also about the depth of that experience.
               </p>
 
               {/* Narrative on Direct Engagement and Partnerships */}
-              <div className="bg-white border-l-3 border-[#04315D] border-y border-r border-[#E8E2D7] rounded-r-2xl p-4 sm:p-5 shadow-2xs mb-6">
+              <div className="bg-white border-l-3 border-[#04315D] border-y border-r border-[#E8E2D7] rounded-r-2xl p-4 sm:p-4.5 shadow-2xs mb-4">
                 <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
                   This combination of direct engagement and partnerships allows Ignis to reach large populations while continuously learning from the communities we serve.
                 </p>
               </div>
 
               {/* Footnote / Basis Note */}
-              <p className="text-[12px] sm:text-[13px] text-[#718096] leading-relaxed font-mono border-t border-[#E8E2D7] pt-3.5">
+              <p className="text-[11.5px] sm:text-[12.5px] text-[#718096] leading-relaxed font-mono border-t border-[#E8E2D7] pt-3">
                 Learner-hour estimates are based on 604,000+ learners and an estimated 80–120 hours of annual learning activities per learner.
               </p>
 
@@ -365,7 +365,7 @@ export default function ImpactPage() {
       {/* SECTION 03 — CAPITAL EFFICIENCY                                 */}
       {/* Left: Text from Document | Right: Blended Classroom Image       */}
       {/* ============================================================== */}
-      <section className="relative w-full bg-[#F8F5EF] border-t border-[#E8E2D7] py-20 sm:py-28 overflow-hidden">
+      <section id="capital-efficiency" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#F8F5EF] border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
         {/* Subtle radial ambient gradients */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#A21246]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
@@ -373,7 +373,7 @@ export default function ImpactPage() {
         <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
           {/* Section Marker */}
-          <div className="flex items-center gap-2.5 mb-8 sm:mb-12">
+          <div className="flex items-center gap-2.5 mb-6 sm:mb-8">
             <span className="w-8 h-[2px] bg-[#A21246]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#A21246]">
               03 — CAPITAL EFFICIENCY
@@ -477,9 +477,11 @@ export default function ImpactPage() {
 
       {/* ============================================================== */}
       {/* SECTION 04 — HOW IMPACT IS CREATED                             */}
+      {/* ============================================================== */}
+      {/* SECTION 04 — HOW IMPACT IS CREATED                             */}
       {/* 5-Step Continuous Learning Cycle (Strict doc text, no arrows)  */}
       {/* ============================================================== */}
-      <section className="relative w-full bg-[#FAF8F5] border-t border-[#E8E2D7] py-20 sm:py-28 overflow-hidden">
+      <section id="how-impact-is-created" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#FAF8F5] border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
         {/* Soft background light blooms */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-[#04315D]/5 rounded-full blur-3xl opacity-30 pointer-events-none" />
@@ -487,7 +489,7 @@ export default function ImpactPage() {
         <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
           {/* Section Marker */}
-          <div className="flex items-center gap-2.5 mb-6 sm:mb-8">
+          <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
             <span className="w-8 h-[2px] bg-[#04315D]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#04315D]">
               04 — HOW IMPACT IS CREATED
@@ -495,8 +497,8 @@ export default function ImpactPage() {
           </div>
 
           {/* Section Heading & Subtitle */}
-          <div className="max-w-3xl mb-12 sm:mb-16">
-            <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-4">
+          <div className="max-w-3xl mb-6 sm:mb-8">
+            <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-3">
               How impact is created
             </h2>
             <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
@@ -505,119 +507,119 @@ export default function ImpactPage() {
           </div>
 
           {/* The 5 Continuous Cycle Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 mb-6 sm:mb-8">
             
             {/* Step 1: Understand */}
-            <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
-                    <Compass className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
+                    <Compass className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     01
                   </span>
                 </div>
-                <h3 className="font-serif text-[22px] sm:text-[24px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
                   Understand
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   We study learners, their contexts, needs and aspirations.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#04315D] w-10" />
               </div>
             </div>
 
             {/* Step 2: Design */}
-            <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center">
-                    <Lightbulb className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center">
+                    <Lightbulb className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     02
                   </span>
                 </div>
-                <h3 className="font-serif text-[22px] sm:text-[24px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
                   Design
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   Research informs relevant learning experiences, products and programmes.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#A21246] w-10" />
               </div>
             </div>
 
             {/* Step 3: Deliver */}
-            <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#107C68]/10 text-[#107C68] flex items-center justify-center">
-                    <Send className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#107C68]/10 text-[#107C68] flex items-center justify-center">
+                    <Send className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     03
                   </span>
                 </div>
-                <h3 className="font-serif text-[22px] sm:text-[24px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
                   Deliver
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   Educators, technology and partner organisations bring these experiences to learners.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#107C68] w-10" />
               </div>
             </div>
 
             {/* Step 4: Measure */}
-            <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
-                    <BarChart3 className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
+                    <BarChart3 className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     04
                   </span>
                 </div>
-                <h3 className="font-serif text-[22px] sm:text-[24px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
                   Measure
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   We track participation, engagement and relevant learning indicators.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#04315D] w-10" />
               </div>
             </div>
 
             {/* Step 5: Improve */}
-            <div className="bg-white border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#AF1B49]/10 text-[#AF1B49] flex items-center justify-center">
-                    <TrendingUp className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#AF1B49]/10 text-[#AF1B49] flex items-center justify-center">
+                    <TrendingUp className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     05
                   </span>
                 </div>
-                <h3 className="font-serif text-[22px] sm:text-[24px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
                   Improve
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   Evidence and feedback inform the next generation of our programmes and products.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#AF1B49] w-10" />
               </div>
             </div>
@@ -625,7 +627,7 @@ export default function ImpactPage() {
           </div>
 
           {/* Section Summary Box */}
-          <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 shadow-2xs max-w-2xl">
+          <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-5 shadow-2xs max-w-2xl">
             <p className="text-sm sm:text-[15px] text-[#04315D] font-medium leading-relaxed">
               The result is a model designed to learn while it scales.
             </p>
@@ -637,23 +639,23 @@ export default function ImpactPage() {
       {/* ============================================================== */}
       {/* SECTION 05 — FROM REACH TO OUTCOMES                            */}
       {/* ============================================================== */}
-      <section className="py-16 sm:py-24 bg-white border-b border-[#E8E2D7]">
-        <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="reach-to-outcomes" className="scroll-mt-20 lg:scroll-mt-24 py-8 sm:py-10 lg:py-12 bg-white border-b border-[#E8E2D7]">
+        <div className="max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
           {/* Section Eyebrow */}
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-[11px] font-mono font-bold tracking-widest text-[#A21246] uppercase bg-[#FAF6F0] px-2.5 py-1 rounded border border-[#E8E2D7]">
+          <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
+            <span className="w-8 h-[2px] bg-[#A21246]" aria-hidden="true" />
+            <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#A21246]">
               05 — FROM REACH TO OUTCOMES
             </span>
-            <div className="h-px bg-[#E8E2D7] flex-1 max-w-[120px]" />
           </div>
 
           {/* Section Header & Narrative */}
-          <div className="max-w-3xl mb-12 sm:mb-16">
-            <h2 className="font-serif text-[32px] sm:text-[42px] lg:text-[46px] font-bold text-[#04315D] tracking-tight leading-[1.12] mb-5">
+          <div className="max-w-3xl mb-6 sm:mb-8">
+            <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#04315D] tracking-tight leading-[1.12] mb-3">
               Counting learners is not enough.
             </h2>
-            <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
+            <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-3">
               Reach tells us who we serve. Engagement tells us how deeply they participate. Outcomes tell us what difference the experience makes.
             </p>
             <p className="text-sm sm:text-[15px] text-[#04315D] font-medium leading-relaxed">
@@ -662,108 +664,108 @@ export default function ImpactPage() {
           </div>
 
           {/* Four Dimensions Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             
             {/* Dimension 1: REACH */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
-                    <Users className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
+                    <Users className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     01
                   </span>
                 </div>
-                <div className="text-[11px] font-mono font-bold tracking-widest text-[#04315D] uppercase mb-2">
+                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#04315D] uppercase mb-1.5">
                   REACH
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
                   Who are we reaching?
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   Learners, schools, communities and partner organisations.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#04315D] w-12" />
               </div>
             </div>
 
             {/* Dimension 2: ENGAGEMENT */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center">
-                    <Activity className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center">
+                    <Activity className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     02
                   </span>
                 </div>
-                <div className="text-[11px] font-mono font-bold tracking-widest text-[#A21246] uppercase mb-2">
+                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#A21246] uppercase mb-1.5">
                   ENGAGEMENT
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
                   How are learners participating?
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   Participation, duration and sustained engagement.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#A21246] w-12" />
               </div>
             </div>
 
             {/* Dimension 3: LEARNING */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#107C68]/10 text-[#107C68] flex items-center justify-center">
-                    <GraduationCap className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#107C68]/10 text-[#107C68] flex items-center justify-center">
+                    <GraduationCap className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     03
                   </span>
                 </div>
-                <div className="text-[11px] font-mono font-bold tracking-widest text-[#107C68] uppercase mb-2">
+                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#107C68] uppercase mb-1.5">
                   LEARNING
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
                   What are learners gaining?
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   Knowledge, skills and capabilities relevant to each programme.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#107C68] w-12" />
               </div>
             </div>
 
             {/* Dimension 4: OPPORTUNITY */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs">
+            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#AF1B49]/10 text-[#AF1B49] flex items-center justify-center">
-                    <Sparkles className="w-5 h-5" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-9 h-9 rounded-xl bg-[#AF1B49]/10 text-[#AF1B49] flex items-center justify-center">
+                    <Sparkles className="w-4.5 h-4.5" />
                   </div>
-                  <span className="text-[11px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
                     04
                   </span>
                 </div>
-                <div className="text-[11px] font-mono font-bold tracking-widest text-[#AF1B49] uppercase mb-2">
+                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#AF1B49] uppercase mb-1.5">
                   OPPORTUNITY
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-3 leading-snug">
+                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
                   What can learning enable?
                 </h3>
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
                   Longer-term educational, personal and economic opportunities.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-6">
+              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#AF1B49] w-12" />
               </div>
             </div>
@@ -776,36 +778,36 @@ export default function ImpactPage() {
       {/* ============================================================== */}
       {/* SECTION 06 — THE NEXT STAGE                                    */}
       {/* ============================================================== */}
-      <section className="py-16 sm:py-24 bg-[#FAF6F0] border-b border-[#E8E2D7]">
-        <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="next-stage" className="scroll-mt-20 lg:scroll-mt-24 py-8 sm:py-10 lg:py-12 bg-[#FAF6F0] border-b border-[#E8E2D7]">
+        <div className="max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
             {/* LEFT COLUMN (Span 6): Narrative & Core Pillars */}
             <div className="lg:col-span-6 flex flex-col justify-center">
               
               {/* Section Eyebrow */}
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-[11px] font-mono font-bold tracking-widest text-[#A21246] uppercase bg-white px-2.5 py-1 rounded border border-[#E8E2D7]">
+              <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
+                <span className="w-8 h-[2px] bg-[#A21246]" aria-hidden="true" />
+                <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#A21246]">
                   06 — THE NEXT STAGE
                 </span>
-                <div className="h-px bg-[#E8E2D7] flex-1 max-w-[120px]" />
               </div>
 
               {/* Headline */}
-              <h2 className="font-serif text-[32px] sm:text-[42px] lg:text-[46px] font-bold text-[#04315D] tracking-tight leading-[1.12] mb-6">
+              <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#04315D] tracking-tight leading-[1.12] mb-4">
                 From 604,000 to the next million
               </h2>
 
               {/* Narrative paragraphs */}
-              <div className="space-y-4 mb-8">
+              <div className="space-y-3 mb-6">
                 <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
                   Our first phase has demonstrated the potential to deliver meaningful learning experiences at significant scale.
                 </p>
                 <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
                   The next phase is about extending that model through technology, partnerships and new delivery models—including approaches that can take quality learning deeper into smaller towns and underserved communities.
                 </p>
-                <div className="relative pl-5 sm:pl-6 border-l-2 border-[#A21246]/40 py-1">
+                <div className="relative pl-4 sm:pl-5 border-l-2 border-[#A21246]/40 py-0.5">
                   <p className="text-sm sm:text-[15px] text-[#04315D] font-medium leading-relaxed">
                     Our ambition is not simply to reach more people. It is to make meaningful learning more accessible, scalable and measurable.
                   </p>
@@ -813,30 +815,30 @@ export default function ImpactPage() {
               </div>
 
               {/* 3 Pillars: More learners. More learning. More opportunity. */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 shadow-2xs">
-                  <div className="text-[11px] font-mono font-bold tracking-wider text-[#A21246] uppercase mb-1">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-3.5 sm:p-4 shadow-2xs">
+                  <div className="text-[10.5px] font-mono font-bold tracking-wider text-[#A21246] uppercase mb-0.5">
                     Scale
                   </div>
-                  <div className="text-[14.5px] font-semibold text-[#04315D]">
+                  <div className="text-[14px] sm:text-[14.5px] font-semibold text-[#04315D]">
                     More learners.
                   </div>
                 </div>
 
-                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 shadow-2xs">
-                  <div className="text-[11px] font-mono font-bold tracking-wider text-[#04315D] uppercase mb-1">
+                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-3.5 sm:p-4 shadow-2xs">
+                  <div className="text-[10.5px] font-mono font-bold tracking-wider text-[#04315D] uppercase mb-0.5">
                     Depth
                   </div>
-                  <div className="text-[14.5px] font-semibold text-[#04315D]">
+                  <div className="text-[14px] sm:text-[14.5px] font-semibold text-[#04315D]">
                     More learning.
                   </div>
                 </div>
 
-                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 shadow-2xs">
-                  <div className="text-[11px] font-mono font-bold tracking-wider text-[#107C68] uppercase mb-1">
+                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-3.5 sm:p-4 shadow-2xs">
+                  <div className="text-[10.5px] font-mono font-bold tracking-wider text-[#107C68] uppercase mb-0.5">
                     Outcomes
                   </div>
-                  <div className="text-[14.5px] font-semibold text-[#04315D]">
+                  <div className="text-[14px] sm:text-[14.5px] font-semibold text-[#04315D]">
                     More opportunity.
                   </div>
                 </div>
@@ -846,7 +848,7 @@ export default function ImpactPage() {
               <div>
                 <a
                   href="/csr-support"
-                  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#A21246] hover:bg-[#850E38] text-white text-[14.5px] font-medium transition-all shadow-sm hover:shadow-md group"
+                  className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#A21246] hover:bg-[#850E38] text-white text-[14px] font-medium transition-all shadow-sm hover:shadow-md group"
                 >
                   <span>Partner with Ignis</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

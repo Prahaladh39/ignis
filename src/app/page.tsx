@@ -3,7 +3,6 @@ import HeroSection from "@/components/HeroSection";
 import MetricsSection from "@/components/MetricsSection";
 import UspSection from "@/components/UspSection";
 import LearningModelSection from "@/components/LearningModelSection";
-import ImpactSection from "@/components/ImpactSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import FutureActionSection from "@/components/FutureActionSection";
 import Footer from "@/components/Footer";
@@ -26,9 +25,6 @@ export default function Home() {
 
       {/* The Ignis Learning Model (From knowledge to capability) */}
       <LearningModelSection />
-
-      {/* Section 5: Impact & Geographic Scale (12 years of learning in the real world + India Vector Map) */}
-      <ImpactSection />
 
       {/* Section 7: Programmes (What we build) */}
       <ProgrammesSection />

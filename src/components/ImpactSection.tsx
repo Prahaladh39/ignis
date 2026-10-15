@@ -6,18 +6,16 @@ import {
   ArrowRight,
   Users,
   Handshake,
-  Award,
   GraduationCap,
 } from "lucide-react";
 
 export default function ImpactSection() {
   const [hasAnimated, setHasAnimated] = useState(false);
-  const [activeSegment, setActiveSegment] = useState<"all" | "direct" | "partner">("all");
+  const [activeSegment, setActiveSegment] = useState<"direct" | "partner">("direct");
   const sectionRef = useRef<HTMLElement>(null);
 
   // Counter animation state
   const [counts, setCounts] = useState({
-    overall: 0,
     direct: 0,
     partner: 0,
     trained: 0,
@@ -39,7 +37,6 @@ export default function ImpactSection() {
             const ease = 1 - Math.pow(1 - progress, 3);
 
             setCounts({
-              overall: Math.floor(ease * 600000),
               direct: Math.floor(ease * 404000),
               partner: Math.floor(ease * 200000),
               trained: Math.floor(ease * 4000),
@@ -49,7 +46,6 @@ export default function ImpactSection() {
               requestAnimationFrame(animate);
             } else {
               setCounts({
-                overall: 600000,
                 direct: 404000,
                 partner: 200000,
                 trained: 4000,
@@ -107,57 +103,11 @@ export default function ImpactSection() {
         </div>
 
         {/* ============================================================== */}
-        {/* IMPACT CARDS GRID: 4 Key Metric Cards                           */}
+        {/* IMPACT CARDS GRID: 3 Key Metric Cards                           */}
         {/* ============================================================== */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-12 sm:mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch mb-12 sm:mb-14">
           
-          {/* Card 1: 600,000+ Learners Reached Overall (Hero Stat) */}
-          <div
-            onMouseEnter={() => setActiveSegment("all")}
-            className={`bg-white border transition-all duration-300 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-sm group ${
-              activeSegment === "all"
-                ? "border-[#A21246]/50 shadow-md ring-1 ring-[#A21246]/20"
-                : "border-[#E8E2D7]"
-            }`}
-          >
-            <div>
-              <div className="flex items-center justify-between mb-5">
-                <div className="p-2.5 rounded-xl bg-[#A21246]/10 text-[#A21246] border border-[#A21246]/20">
-                  <Award className="w-5 h-5" />
-                </div>
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#A21246] bg-[#A21246]/10 px-2.5 py-0.5 rounded-full border border-[#A21246]/20 font-bold">
-                  Total Reach
-                </span>
-              </div>
-
-              <div className="font-serif text-[38px] sm:text-[44px] font-bold leading-none tracking-tight text-[#04315D] mb-2.5">
-                {counts.overall.toLocaleString()}+
-              </div>
-              <p className="text-[15px] sm:text-[16px] text-[#334155] font-normal leading-snug">
-                Learners reached overall
-              </p>
-            </div>
-
-            {/* Visual Distribution Bar */}
-            <div className="mt-5 pt-4 border-t border-[#F1EBE1]">
-              <div className="flex justify-between text-[11.5px] text-[#64748B] mb-1.5 font-mono">
-                <span className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-[#A21246]" />
-                  Direct: 67%
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-[#107C68]" />
-                  Partners: 33%
-                </span>
-              </div>
-              <div className="h-2.5 w-full bg-[#EAE4D9] rounded-full overflow-hidden flex">
-                <div className="h-full bg-[#A21246]" style={{ width: "67%" }} />
-                <div className="h-full bg-[#107C68]" style={{ width: "33%" }} />
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2: 404,000+ Learners Reached Directly */}
+          {/* Card 1: 404,000+ Learners Reached Directly */}
           <div
             onMouseEnter={() => setActiveSegment("direct")}
             className={`bg-white border transition-all duration-200 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-sm group ${

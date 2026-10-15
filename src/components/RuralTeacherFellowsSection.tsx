@@ -48,14 +48,17 @@ export default function RuralTeacherFellowsSection() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   return (
-    <section className="py-20 lg:py-28 bg-[#F8F5EF] border-b border-[#E8E2D7] relative overflow-hidden">
+    <section
+      id="rural-teacher-fellows"
+      className="scroll-mt-20 lg:scroll-mt-24 py-10 sm:py-14 lg:py-16 bg-[#F8F5EF] border-b border-[#E8E2D7] relative overflow-hidden"
+    >
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#A21246]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#04315D]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A21246]/10 border border-[#A21246]/20 text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-4">
             <GraduationCap className="w-3.5 h-3.5" />
             <span>Fellowship Initiative</span>

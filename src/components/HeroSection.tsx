@@ -53,19 +53,11 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4 sm:gap-5">
               <Link
-                href="#explore"
+                href="#work-with-us"
                 className="inline-flex items-center justify-center gap-2.5 bg-[#A21246] hover:bg-[#860E3A] text-white text-[15px] font-medium px-7 sm:px-8 py-3.5 rounded-full shadow-md shadow-[#A21246]/15 hover:shadow-lg hover:shadow-[#A21246]/25 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Explore Ignis</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-
-              <Link
-                href="#work-with-us"
-                className="inline-flex items-center justify-center gap-2.5 border border-[#04315D]/30 hover:border-[#04315D] bg-transparent hover:bg-[#04315D]/5 text-[#04315D] text-[15px] font-medium px-7 sm:px-8 py-3.5 rounded-full transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
-              >
                 <span>Partner with Ignis</span>
-                <ArrowRight className="w-4 h-4 opacity-75" />
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

@@ -21,11 +21,11 @@ export default function ProgrammesSection() {
   return (
     <section
       id="programmes"
-      className="relative w-full bg-[#FAF8F5] border-b border-[#E8E2D7] py-16 sm:py-20 lg:py-28 overflow-hidden"
+      className="relative w-full bg-[#FAF8F5] border-b border-[#E8E2D7] pt-10 sm:pt-14 pb-6 sm:pb-8 lg:pb-8 overflow-hidden"
     >
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-16">
         {/* Section Header: Clean & Authoritative */}
-        <div className="max-w-2xl mb-12 sm:mb-16">
+        <div className="max-w-2xl mb-8 sm:mb-10">
           <div className="flex items-center gap-2.5 mb-3 sm:mb-4">
             <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">

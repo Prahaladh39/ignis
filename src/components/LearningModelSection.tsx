@@ -53,7 +53,7 @@ export default function LearningModelSection() {
   return (
     <section
       id="model"
-      className="relative w-full bg-white border-b border-[#E8E2D7] py-16 sm:py-20 lg:py-24 overflow-hidden"
+      className="relative w-full bg-white border-b border-[#E8E2D7] py-10 sm:py-14 lg:py-16 overflow-hidden"
     >
       
       {/* Subtle ambient background warmth */}

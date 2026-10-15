@@ -43,16 +43,16 @@ export default function FutureActionSection() {
   return (
     <section
       id="work-with-us"
-      className="relative w-full bg-[#FAF8F5] py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#E8E2D7]"
+      className="relative w-full bg-[#FAF8F5] pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 lg:pb-16 overflow-hidden border-b border-[#E8E2D7]"
     >
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-16">
         
         {/* ============================================================== */}
         {/* MAIN PITCH: Can education help young people shape futures?      */}
         {/* ============================================================== */}
-        <div className="max-w-3xl mx-auto text-center mb-16 sm:mb-20">
+        <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
           {/* Eyebrow */}
-          <div className="flex items-center justify-center gap-2.5 mb-4">
+          <div className="flex items-center justify-center gap-2.5 mb-3 sm:mb-3.5">
             <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
               Dialogue & Partnerships
@@ -121,10 +121,12 @@ export default function FutureActionSection() {
                 </span>
               </div>
 
-              {/* Audience Eyebrow */}
-              <h3 className="font-mono text-[11.5px] uppercase tracking-[0.14em] font-bold text-[#B45309] mb-3">
-                For Schools
-              </h3>
+              {/* Audience Eyebrow / Prominent Badge */}
+              <div className="mb-4">
+                <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#B45309]/10 text-[#B45309] font-mono text-[13px] sm:text-[14px] uppercase tracking-[0.12em] font-extrabold border border-[#B45309]/25 shadow-2xs">
+                  For Schools
+                </span>
+              </div>
 
               {/* Action Headline (Exact Client Copy) */}
               <p className="font-serif text-[21px] sm:text-[23px] leading-snug font-bold text-[#04315D] mb-6">
@@ -174,10 +176,12 @@ export default function FutureActionSection() {
                 </span>
               </div>
 
-              {/* Combined Audience Eyebrow */}
-              <h3 className="font-mono text-[11.5px] uppercase tracking-[0.14em] font-bold text-[#0D5C4D] mb-4">
-                For NGOs, Foundations & Governments
-              </h3>
+              {/* Combined Audience Eyebrow / Prominent Badge */}
+              <div className="mb-4">
+                <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#0D5C4D]/10 text-[#0D5C4D] font-mono text-[13px] sm:text-[14px] uppercase tracking-[0.12em] font-extrabold border border-[#0D5C4D]/25 shadow-2xs">
+                  For NGOs, Foundations & Governments
+                </span>
+              </div>
 
               {/* Dual-Stream Action Modules (Both Exact Client Copies Included) */}
               <div className="space-y-4 mb-6">
@@ -209,7 +213,7 @@ export default function FutureActionSection() {
           </div>
 
           {/* ------------------------------------------------------------ */}
-          {/* CARD 3: FOR FUNDERS & INVESTORS (BIG CARD with increased font) */}
+          {/* CARD 3: FOR FUNDERS & INVESTORS                              */}
           {/* ------------------------------------------------------------ */}
           <div
             onClick={() => {
@@ -217,10 +221,10 @@ export default function FutureActionSection() {
               handleOpenModal("For Funders & Investors");
             }}
             onMouseEnter={() => setSelectedRoute("funders")}
-            className={`group relative bg-white border-2 rounded-3xl p-8 sm:p-9 lg:p-10 flex flex-col justify-between transition-all duration-300 cursor-pointer shadow-md hover:shadow-2xl hover:-translate-y-2 ${
+            className={`group relative bg-white border-2 rounded-3xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 cursor-pointer shadow-sm hover:shadow-xl hover:-translate-y-1.5 ${
               selectedRoute === "funders"
-                ? "border-[#A21246] ring-4 ring-[#A21246]/10 shadow-xl"
-                : "border-[#A21246]/60 hover:border-[#A21246]"
+                ? "border-[#A21246] ring-3 ring-[#A21246]/15 shadow-md"
+                : "border-[#A21246]/50 hover:border-[#A21246]"
             }`}
           >
             {/* Top Prominent Accent Color Bar */}
@@ -228,9 +232,9 @@ export default function FutureActionSection() {
 
             <div>
               {/* Header: Large Icon & Prominent Highlight Pill */}
-              <div className="flex items-center justify-between mb-6 pt-1">
-                <div className="w-14 h-14 rounded-2xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center transition-transform group-hover:scale-110 duration-200 border border-[#A21246]/25 shadow-xs">
-                  <Coins className="w-7 h-7" />
+              <div className="flex items-center justify-between mb-5 pt-1">
+                <div className="w-12 h-12 rounded-2xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center transition-transform group-hover:scale-110 duration-200 border border-[#A21246]/25 shadow-xs">
+                  <Coins className="w-6 h-6" />
                 </div>
 
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#A21246]/10 border border-[#A21246]/20 text-[#A21246] text-[11px] font-mono font-bold uppercase tracking-wider">
@@ -239,21 +243,23 @@ export default function FutureActionSection() {
                 </div>
               </div>
 
-              {/* Large Audience Eyebrow */}
-              <h3 className="font-mono text-[13px] sm:text-[14px] uppercase tracking-[0.16em] font-extrabold text-[#A21246] mb-4">
-                For Funders & Investors
-              </h3>
+              {/* Large Audience Eyebrow / Prominent Badge */}
+              <div className="mb-4">
+                <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#A21246]/10 text-[#A21246] font-mono text-[13px] sm:text-[14px] uppercase tracking-[0.12em] font-extrabold border border-[#A21246]/25 shadow-2xs">
+                  For Funders & Investors
+                </span>
+              </div>
 
-              {/* BIG TYPOGRAPHY Headline Action (Exact Client Copy with Increased Font Size) */}
-              <p className="font-serif text-[26px] sm:text-[29px] lg:text-[32px] leading-[1.2] font-bold text-[#04315D] mb-8 tracking-tight">
+              {/* Headline Action (Font size matched to other cards: text-[17px] sm:text-[18px]) */}
+              <p className="font-serif text-[17px] sm:text-[18px] leading-snug font-bold text-[#04315D] mb-6">
                 Support the next generation for contextual and technology-enabled learning.
               </p>
             </div>
 
-            {/* Bottom Action Link (Prominent) */}
-            <div className="pt-5 border-t border-[#E8E2D7] flex items-center justify-between text-sm font-bold text-[#A21246] group-hover:text-[#850D37] transition-colors">
+            {/* Bottom Action Link (Matched to text-xs font-semibold) */}
+            <div className="pt-4 border-t border-[#E8E2D7]/80 flex items-center justify-between text-xs font-semibold text-[#04315D] group-hover:text-[#A21246] transition-colors">
               <span>Explore investment & funding routes</span>
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1.5" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </div>
           </div>
 
@@ -262,12 +268,12 @@ export default function FutureActionSection() {
         {/* ============================================================== */}
         {/* CENTRAL CONVICTION QUOTE (Exact Client Copy)                   */}
         {/* ============================================================== */}
-        <div className="relative rounded-3xl bg-white border border-[#E8E2D7] p-8 sm:p-12 text-center max-w-4xl mx-auto shadow-sm">
-          <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-[#A21246] font-bold mb-3">
+        <div className="relative rounded-3xl bg-white border border-[#E8E2D7] p-6 sm:p-8 text-center max-w-4xl mx-auto shadow-sm mt-10 sm:mt-12">
+          <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-[#A21246] font-bold mb-2.5">
             The Central Conviction
           </div>
 
-          <blockquote className="font-serif text-[20px] sm:text-[26px] lg:text-[28px] leading-[1.35] text-[#04315D] italic font-normal">
+          <blockquote className="font-serif text-[18px] sm:text-[22px] lg:text-[24px] leading-[1.35] text-[#04315D] italic font-normal">
             &ldquo;Ignis helps young people turn what they learn into the confidence and capability necessary to make choices, solve problems and shape their own lives.&rdquo;
           </blockquote>
         </div>

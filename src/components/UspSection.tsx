@@ -33,36 +33,18 @@ export default function UspSection() {
     },
   };
 
-  const steps = [
-    {
-      step: "01",
-      title: "LEARN",
-      detail: "Grasp foundational concepts",
-    },
-    {
-      step: "02",
-      title: "APPLY",
-      detail: "Test in real situations",
-    },
-    {
-      step: "03",
-      title: "ACT",
-      detail: "Solve problems with agency",
-    },
-  ];
-
   return (
-    <section className="relative w-full bg-[#FFFFFF] border-b border-[#E8E2D7] py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section className="relative w-full bg-[#FFFFFF] border-b border-[#E8E2D7] py-10 sm:py-14 lg:py-16 overflow-hidden">
       
       {/* Ambient background warmth */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#F8F5EF] rounded-full blur-3xl opacity-50 pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#A21246]/5 rounded-full blur-3xl opacity-30 pointer-events-none" />
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 xl:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 xl:gap-16 items-start">
           
           {/* Left Column: Client Narrative & Editorial Rationale */}
-          <div className="lg:col-span-5 flex flex-col justify-center">
+          <div className="lg:col-span-5 flex flex-col justify-start lg:pt-1">
             
             {/* Eyebrow */}
             <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
@@ -374,40 +356,6 @@ export default function UspSection() {
                     >
                       {cap}
                     </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Step 4: LEARN → APPLY → ACT Sequence */}
-              <div>
-                <div className="text-center mb-2">
-                  <span className="text-[10.5px] font-bold uppercase tracking-[0.16em] text-[#64748B]">
-                    The Transformation Pipeline
-                  </span>
-                </div>
-                
-                {/* Mobile: comfortable centered vertical stack / Desktop: 3-column progression */}
-                <div className="flex flex-col sm:grid sm:grid-cols-3 gap-2 sm:gap-2.5 bg-white p-2.5 sm:p-3 rounded-2xl border border-[#E2DDD5] shadow-sm">
-                  {steps.map((item, idx) => (
-                    <div
-                      key={item.step}
-                      className="flex flex-col items-center justify-center text-center p-2.5 sm:p-3 rounded-xl bg-[#FAF8F5] hover:bg-[#F1EFEA] transition-colors"
-                    >
-                      <div className="flex items-center justify-center gap-2 mb-1">
-                        <span className="inline-flex items-center justify-center px-2 py-0.5 rounded-md bg-[#A21246]/10 text-[11px] font-bold text-[#A21246] tracking-wider">
-                          {item.step}
-                        </span>
-                        <span className="text-[13px] sm:text-[12px] font-bold text-[#04315D] tracking-wider uppercase">
-                          {item.title}
-                        </span>
-                        {idx < steps.length - 1 && (
-                          <span className="text-[#94A3B8] font-normal hidden sm:inline ml-1">→</span>
-                        )}
-                      </div>
-                      <p className="text-[12px] sm:text-[11px] text-[#64748B] leading-snug text-center max-w-[260px] sm:max-w-none mx-auto">
-                        {item.detail}
-                      </p>
-                    </div>
                   ))}
                 </div>
               </div>

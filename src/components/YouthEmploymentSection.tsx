@@ -3,7 +3,10 @@ import { Sparkles, Briefcase, GraduationCap } from "lucide-react";
 
 export default function YouthEmploymentSection() {
   return (
-    <section className="py-16 lg:py-24 bg-white border-b border-[#E8E2D7] relative overflow-hidden">
+    <section
+      id="youth-employment-programme"
+      className="scroll-mt-20 lg:scroll-mt-24 py-10 sm:py-14 lg:py-16 bg-white border-b border-[#E8E2D7] relative overflow-hidden"
+    >
       {/* Background Ambience */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#04315D]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#A21246]/5 rounded-full blur-3xl pointer-events-none" />

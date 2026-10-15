@@ -33,8 +33,55 @@ export default function CsrSupportPage() {
       {/* Header Navigation */}
       <Navbar />
 
+      {/* Top Pointy Navigation Bar: Horizontal on Desktop/Laptop, Vertical on Tablet/Mobile */}
+      <section className="relative w-full bg-white border-b border-[#E8E2D7] py-3.5 sm:py-4">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 flex justify-center">
+          <nav aria-label="CSR Programme Navigation" className="flex flex-col lg:flex-row items-stretch lg:items-center justify-center gap-2 sm:gap-2.5 w-full max-w-md lg:max-w-none">
+            <a
+              href="#rural-teacher-fellows"
+              className="group flex items-center justify-between lg:justify-center gap-1.5 px-3 py-2 rounded-md bg-[#A21246] hover:bg-[#780A32] text-white border border-[#A21246] hover:border-[#780A32] text-xs xl:text-[13px] font-medium transition-all duration-200 shadow-2xs hover:shadow-sm hover:translate-x-0.5 lg:hover:translate-x-0 lg:hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0"
+            >
+              <span className="whitespace-nowrap">Rural Teacher Fellows Programme</span>
+              <span className="text-white/80 group-hover:text-white group-hover:translate-x-0.5 transition-transform text-xs shrink-0">→</span>
+            </a>
+
+            <a
+              href="#research-capacity-building"
+              className="group flex items-center justify-between lg:justify-center gap-1.5 px-3 py-2 rounded-md bg-[#A21246] hover:bg-[#780A32] text-white border border-[#A21246] hover:border-[#780A32] text-xs xl:text-[13px] font-medium transition-all duration-200 shadow-2xs hover:shadow-sm hover:translate-x-0.5 lg:hover:translate-x-0 lg:hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0"
+            >
+              <span className="whitespace-nowrap">Research and Capacity Building</span>
+              <span className="text-white/80 group-hover:text-white group-hover:translate-x-0.5 transition-transform text-xs shrink-0">→</span>
+            </a>
+
+            <a
+              href="#life-skills-girls"
+              className="group flex items-center justify-between lg:justify-center gap-1.5 px-3 py-2 rounded-md bg-[#A21246] hover:bg-[#780A32] text-white border border-[#A21246] hover:border-[#780A32] text-xs xl:text-[13px] font-medium transition-all duration-200 shadow-2xs hover:shadow-sm hover:translate-x-0.5 lg:hover:translate-x-0 lg:hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0"
+            >
+              <span className="whitespace-nowrap">Life Skills for Girls</span>
+              <span className="text-white/80 group-hover:text-white group-hover:translate-x-0.5 transition-transform text-xs shrink-0">→</span>
+            </a>
+
+            <a
+              href="#youth-employment-programme"
+              className="group flex items-center justify-between lg:justify-center gap-1.5 px-3 py-2 rounded-md bg-[#A21246] hover:bg-[#780A32] text-white border border-[#A21246] hover:border-[#780A32] text-xs xl:text-[13px] font-medium transition-all duration-200 shadow-2xs hover:shadow-sm hover:translate-x-0.5 lg:hover:translate-x-0 lg:hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0"
+            >
+              <span className="whitespace-nowrap">Employment Enhancement Programme for Youth</span>
+              <span className="text-white/80 group-hover:text-white group-hover:translate-x-0.5 transition-transform text-xs shrink-0">→</span>
+            </a>
+
+            <a
+              href="#teacher-training-participatory-learning"
+              className="group flex items-center justify-between lg:justify-center gap-1.5 px-3 py-2 rounded-md bg-[#A21246] hover:bg-[#780A32] text-white border border-[#A21246] hover:border-[#780A32] text-xs xl:text-[13px] font-medium transition-all duration-200 shadow-2xs hover:shadow-sm hover:translate-x-0.5 lg:hover:translate-x-0 lg:hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0"
+            >
+              <span className="whitespace-nowrap">Teacher Training for Participatory Learning</span>
+              <span className="text-white/80 group-hover:text-white group-hover:translate-x-0.5 transition-transform text-xs shrink-0">→</span>
+            </a>
+          </nav>
+        </div>
+      </section>
+
       {/* Hero Intro for CSR Support */}
-      <section className="relative pt-12 pb-16 lg:pt-16 lg:pb-20 bg-gradient-to-b from-[#F2EDE2]/60 to-[#F8F5EF] border-b border-[#E8E2D7] overflow-hidden">
+      <section className="relative pt-8 pb-10 lg:pt-12 lg:pb-14 bg-gradient-to-b from-[#F2EDE2]/60 to-[#F8F5EF] border-b border-[#E8E2D7] overflow-hidden">
         {/* Subtle study-related floating background icons */}
         <div className="absolute inset-0 pointer-events-none select-none overflow-hidden" aria-hidden="true">
           {/* Top-left: Book */}

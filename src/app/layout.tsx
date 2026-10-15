@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "Ignis integrates Life Skills with English, Science and Maths to help young learners build knowledge, confidence and agency to make decisions, solve problems, communicate and participate in the world around them.",
 };
 
+import BackToTop from "@/components/BackToTop";
+
 export default function RootLayout({
   children,
 }: {
@@ -29,11 +31,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${newsreader.variable} ${plusJakartaSans.variable} h-full antialiased`}
+      className={`${newsreader.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#F8F5EF] text-[#2D3748] selection:bg-[#A21246] selection:text-white">
+      <body className="min-h-full flex flex-col font-sans bg-[#F8F5EF] text-[#2D3748] selection:bg-[#A21246] selection:text-white relative">
         {children}
+        <BackToTop />
       </body>
     </html>
   );
 }
+

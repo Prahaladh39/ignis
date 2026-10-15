@@ -67,10 +67,10 @@ export default function IgnisInMediaMarquee({
   const marqueeItems = [...mediaList, ...mediaList];
 
   return (
-    <section className="relative py-16 lg:py-20 bg-white overflow-hidden border-b border-[#E8E2D7]">
+    <section className="relative py-10 sm:py-14 bg-white overflow-hidden border-b border-[#E8E2D7]">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#04315D]/10 border border-[#04315D]/20 text-xs font-semibold tracking-wider text-[#04315D] uppercase mb-4">
             <Newspaper className="w-3.5 h-3.5" />
             <span>Press & Recognition</span>

@@ -72,10 +72,10 @@ export default function PartnersMarquee({
   const marqueeList = [...partners, ...partners];
 
   return (
-    <section className="relative py-20 bg-white overflow-hidden border-b border-[#E8E2D7]">
+    <section className="relative py-10 sm:py-14 bg-white overflow-hidden border-b border-[#E8E2D7]">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F8F5EF] border border-[#E2DDD5] shadow-xs text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Trusted Collaborations</span>
