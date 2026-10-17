@@ -123,7 +123,7 @@ export default function FutureActionSection() {
 
               {/* Audience Eyebrow / Prominent Badge */}
               <div className="mb-4">
-                <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#B45309]/10 text-[#B45309] font-mono text-[13px] sm:text-[14px] uppercase tracking-[0.12em] font-extrabold border border-[#B45309]/25 shadow-2xs">
+                <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#B45309]/10 text-[#B45309] font-mono text-[16px] sm:text-[18px] uppercase tracking-[0.10em] font-extrabold border border-[#B45309]/30 shadow-xs">
                   For Schools
                 </span>
               </div>
@@ -178,7 +178,7 @@ export default function FutureActionSection() {
 
               {/* Combined Audience Eyebrow / Prominent Badge */}
               <div className="mb-4">
-                <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#0D5C4D]/10 text-[#0D5C4D] font-mono text-[13px] sm:text-[14px] uppercase tracking-[0.12em] font-extrabold border border-[#0D5C4D]/25 shadow-2xs">
+                <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#0D5C4D]/10 text-[#0D5C4D] font-mono text-[16px] sm:text-[18px] uppercase tracking-[0.10em] font-extrabold border border-[#0D5C4D]/30 shadow-xs">
                   For NGOs, Foundations & Governments
                 </span>
               </div>
@@ -245,7 +245,7 @@ export default function FutureActionSection() {
 
               {/* Large Audience Eyebrow / Prominent Badge */}
               <div className="mb-4">
-                <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#A21246]/10 text-[#A21246] font-mono text-[13px] sm:text-[14px] uppercase tracking-[0.12em] font-extrabold border border-[#A21246]/25 shadow-2xs">
+                <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#A21246]/10 text-[#A21246] font-mono text-[16px] sm:text-[18px] uppercase tracking-[0.10em] font-extrabold border border-[#A21246]/30 shadow-xs">
                   For Funders & Investors
                 </span>
               </div>

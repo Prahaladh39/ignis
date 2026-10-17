@@ -19,14 +19,18 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   {
+    label: "Home",
+    href: "/",
+  },
+  {
     label: "Impact",
     href: "/impact",
     sections: [
       { title: "01 — Impact at Scale", href: "/impact#impact-at-scale", tag: "604K+ Learners" },
-      { title: "02 — Reach × Depth", href: "/impact#reach-depth", tag: "80–120 Hrs/Yr" },
-      { title: "03 — Capital Efficiency", href: "/impact#capital-efficiency", tag: "$450K Scale" },
-      { title: "04 — How Impact is Created", href: "/impact#how-impact-is-created", tag: "5-Step Cycle" },
-      { title: "05 — From Reach to Outcomes", href: "/impact#reach-to-outcomes", tag: "4 Dimensions" },
+      { title: "02 — How Impact is Created", href: "/impact#how-impact-is-created", tag: "5-Step Cycle" },
+      { title: "03 — From Reach to Outcomes", href: "/impact#reach-to-outcomes", tag: "4 Dimensions" },
+      { title: "04 — Reach × Depth", href: "/impact#reach-depth", tag: "80–120 Hrs/Yr" },
+      { title: "05 — Capital Efficiency", href: "/impact#capital-efficiency", tag: "$450K Scale" },
       { title: "06 — The Next Stage", href: "/impact#next-stage", tag: "Next 1M" },
     ],
   },

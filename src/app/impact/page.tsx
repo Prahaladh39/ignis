@@ -252,233 +252,7 @@ export default function ImpactPage() {
       </section>
 
       {/* ============================================================== */}
-      {/* SECTION 02 — REACH × DEPTH                                     */}
-      {/* Left: Blended Image | Right: Managed Editorial Content         */}
-      {/* ============================================================== */}
-      <section id="reach-depth" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#F2EDE2]/60 border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
-        {/* Soft background light blooms */}
-        <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#04315D]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
-
-        <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
-          
-          {/* Section Marker */}
-          <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
-            <span className="w-8 h-[2px] bg-[#04315D]" aria-hidden="true" />
-            <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#04315D]">
-              02 — REACH × DEPTH
-            </span>
-          </div>
-
-          {/* 2-Column Balanced Editorial Structure: Cards on Left | Narrative on Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-            
-            {/* LEFT COLUMN (Span 6): Depth & Reach Metric Cards */}
-            <div className="lg:col-span-6 flex flex-col gap-3.5 sm:gap-4">
-              
-              {/* Highlight Callout: 80–120 hours per learner, per year */}
-              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
-                <span className="text-[10.5px] font-mono uppercase tracking-wider text-[#A21246] font-bold block mb-1.5">
-                  Learning Depth
-                </span>
-                <p className="text-[16px] sm:text-[17.5px] text-[#04315D] font-medium leading-[1.4] mb-3">
-                  Our programmes typically provide <span className="font-bold text-[#A21246] font-serif text-[22px] sm:text-[24px]">80–120 hours</span> of learning activities per learner each year.
-                </p>
-                <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden">
-                  <div className="h-full bg-[#A21246] w-20" />
-                </div>
-              </div>
-
-              {/* Annual Exposure Box */}
-              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
-                <p className="text-[11px] font-mono uppercase tracking-wider text-[#64748B] mb-1.5 font-semibold">
-                  Across 604,000+ learners, this represents an estimated:
-                </p>
-                <div className="font-serif text-[36px] sm:text-[42px] font-bold text-[#04315D] tracking-tight leading-none mb-1.5">
-                  48–72 million
-                </div>
-                <p className="text-[14px] sm:text-[15px] text-[#475569] leading-snug">
-                  Learner-hours of annual learning exposure
-                </p>
-              </div>
-
-              {/* Our Reach Breakdown Card */}
-              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
-                <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#107C68] font-bold mb-3">
-                  Our reach
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D7]">
-                  <div className="flex flex-col">
-                    <span className="font-serif text-[28px] sm:text-[32px] font-bold text-[#04315D] leading-none mb-1">
-                      404K+
-                    </span>
-                    <span className="text-[13.5px] text-[#475569] leading-snug">
-                      Learners reached directly
-                    </span>
-                  </div>
-                  <div className="flex flex-col pt-3 sm:pt-0 sm:pl-5">
-                    <span className="font-serif text-[28px] sm:text-[32px] font-bold text-[#107C68] leading-none mb-1">
-                      200K+
-                    </span>
-                    <span className="text-[13.5px] text-[#475569] leading-snug">
-                      Learners reached through partner organisations
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            {/* RIGHT COLUMN (Span 6): Core Narrative & Philosophy */}
-            <div className="lg:col-span-6 flex flex-col justify-start">
-              
-              {/* Main Section Headline */}
-              <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-4">
-                We measure more than the number of learners reached.
-              </h2>
-
-              {/* Sub-paragraph */}
-              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
-                Impact is not only about how many people experience a programme. It is also about the depth of that experience.
-              </p>
-
-              {/* Narrative on Direct Engagement and Partnerships */}
-              <div className="bg-white border-l-3 border-[#04315D] border-y border-r border-[#E8E2D7] rounded-r-2xl p-4 sm:p-4.5 shadow-2xs mb-4">
-                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
-                  This combination of direct engagement and partnerships allows Ignis to reach large populations while continuously learning from the communities we serve.
-                </p>
-              </div>
-
-              {/* Footnote / Basis Note */}
-              <p className="text-[11.5px] sm:text-[12.5px] text-[#718096] leading-relaxed font-mono border-t border-[#E8E2D7] pt-3">
-                Learner-hour estimates are based on 604,000+ learners and an estimated 80–120 hours of annual learning activities per learner.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* ============================================================== */}
-      {/* SECTION 03 — CAPITAL EFFICIENCY                                 */}
-      {/* Left: Text from Document | Right: Blended Classroom Image       */}
-      {/* ============================================================== */}
-      <section id="capital-efficiency" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#F8F5EF] border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
-        {/* Subtle radial ambient gradients */}
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#A21246]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
-
-        <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
-          
-          {/* Section Marker */}
-          <div className="flex items-center gap-2.5 mb-6 sm:mb-8">
-            <span className="w-8 h-[2px] bg-[#A21246]" aria-hidden="true" />
-            <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#A21246]">
-              03 — CAPITAL EFFICIENCY
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
-            {/* LEFT COLUMN (Span 6): Text from Document */}
-            <div className="lg:col-span-6 flex flex-col justify-start">
-              
-              {/* Main Headline */}
-              <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-6">
-                Turning investment into learning at scale
-              </h2>
-
-              {/* Lead Paragraph */}
-              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
-                The $450,000 raised by Ignis has supported the capabilities needed to design, deliver and scale learning—including research, people, technology, learning resources and partnerships.
-              </p>
-
-              {/* Secondary Lead */}
-              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-6">
-                The relationship between our investment and aggregate reach provides a simple view of capital efficiency.
-              </p>
-
-              {/* Highlighted Capital Efficiency Metric Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-6">
-                
-                {/* Metric 1: ~$0.75 (Highlighted) */}
-                <div className="bg-white border-2 border-[#A21246] rounded-2xl p-5 sm:p-6 shadow-sm">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#A21246] font-bold block mb-1.5">
-                    Efficiency Metric
-                  </span>
-                  <div className="font-serif text-[38px] sm:text-[44px] font-bold text-[#A21246] leading-none mb-2">
-                    ~$0.75
-                  </div>
-                  <p className="text-[14px] sm:text-[15px] text-[#04315D] font-medium leading-snug">
-                    Capital raised per learner reached
-                  </p>
-                </div>
-
-                {/* Metric 2: <1¢ */}
-                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 shadow-2xs">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#64748B] font-semibold block mb-1.5">
-                    Unit Economics
-                  </span>
-                  <div className="font-serif text-[38px] sm:text-[44px] font-bold text-[#04315D] leading-none mb-2">
-                    &lt;1¢
-                  </div>
-                  <p className="text-[14px] sm:text-[15px] text-[#475569] leading-snug">
-                    Capital raised per learner-hour
-                  </p>
-                </div>
-
-              </div>
-
-              {/* Explanation Note */}
-              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
-                These figures illustrate the scale of learning exposure associated with the capital raised.
-              </p>
-
-              {/* Disclaimer Footnote */}
-              <p className="text-[12px] sm:text-[13px] text-[#718096] leading-relaxed font-mono border-t border-[#E8E2D7] pt-3.5">
-                Capital-efficiency metrics are calculated using $450,000 of investment, 604,000+ learners and estimated annual learner-hours. They are not financial returns or a formal Social Return on Investment (SROI) calculation.
-              </p>
-
-            </div>
-
-            {/* RIGHT COLUMN (Span 6): Authentic Blended Classroom Image */}
-            <div className="lg:col-span-6 relative flex justify-center">
-              <div className="relative w-full max-w-[580px] rounded-3xl overflow-hidden shadow-lg border border-[#E8E2D7]/80 bg-[#E8E2D7]/30 group">
-                
-                {/* Authentic Documentary Classroom Image */}
-                <Image
-                  src="/images/reach_depth_classroom.jpg"
-                  alt="Students engaged in deep, hands-on learning activities"
-                  width={1024}
-                  height={768}
-                  className="w-full h-auto object-cover aspect-4/3 transition-transform duration-700"
-                />
-
-                {/* Soft gradient blend overlays for harmony with canvas */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#04315D]/40 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-3xl pointer-events-none" />
-
-                {/* Floating pill badge on the image */}
-                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full border border-white/60 shadow-sm flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#107C68] animate-pulse" />
-                  <span className="text-[12px] sm:text-[13px] font-medium text-[#04315D]">
-                    Hands-on learning in action
-                  </span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* ============================================================== */}
-      {/* SECTION 04 — HOW IMPACT IS CREATED                             */}
-      {/* ============================================================== */}
-      {/* SECTION 04 — HOW IMPACT IS CREATED                             */}
+      {/* SECTION 02 — HOW IMPACT IS CREATED                             */}
       {/* 5-Step Continuous Learning Cycle (Strict doc text, no arrows)  */}
       {/* ============================================================== */}
       <section id="how-impact-is-created" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#FAF8F5] border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
@@ -492,7 +266,7 @@ export default function ImpactPage() {
           <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
             <span className="w-8 h-[2px] bg-[#04315D]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#04315D]">
-              04 — HOW IMPACT IS CREATED
+              02 — HOW IMPACT IS CREATED
             </span>
           </div>
 
@@ -637,16 +411,16 @@ export default function ImpactPage() {
       </section>
 
       {/* ============================================================== */}
-      {/* SECTION 05 — FROM REACH TO OUTCOMES                            */}
+      {/* SECTION 03 — FROM REACH TO OUTCOMES                            */}
       {/* ============================================================== */}
-      <section id="reach-to-outcomes" className="scroll-mt-20 lg:scroll-mt-24 py-8 sm:py-10 lg:py-12 bg-white border-b border-[#E8E2D7]">
+      <section id="reach-to-outcomes" className="scroll-mt-20 lg:scroll-mt-24 py-8 sm:py-10 lg:py-12 bg-white border-t border-[#E8E2D7]">
         <div className="max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
           {/* Section Eyebrow */}
           <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
             <span className="w-8 h-[2px] bg-[#A21246]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#A21246]">
-              05 — FROM REACH TO OUTCOMES
+              03 — FROM REACH TO OUTCOMES
             </span>
           </div>
 
@@ -767,6 +541,230 @@ export default function ImpactPage() {
               </div>
               <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
                 <div className="h-full bg-[#AF1B49] w-12" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* ============================================================== */}
+      {/* SECTION 04 — REACH × DEPTH                                     */}
+      {/* Left: Blended Image | Right: Managed Editorial Content         */}
+      {/* ============================================================== */}
+      <section id="reach-depth" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#F2EDE2]/60 border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
+        {/* Soft background light blooms */}
+        <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#04315D]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
+
+        <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
+          
+          {/* Section Marker */}
+          <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
+            <span className="w-8 h-[2px] bg-[#04315D]" aria-hidden="true" />
+            <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#04315D]">
+              04 — REACH × DEPTH
+            </span>
+          </div>
+
+          {/* 2-Column Balanced Editorial Structure: Cards on Left | Narrative on Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            
+            {/* LEFT COLUMN (Span 6): Depth & Reach Metric Cards */}
+            <div className="lg:col-span-6 flex flex-col gap-3.5 sm:gap-4">
+              
+              {/* Highlight Callout: 80–120 hours per learner, per year */}
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-[#A21246] font-bold block mb-1.5">
+                  Learning Depth
+                </span>
+                <p className="text-[16px] sm:text-[17.5px] text-[#04315D] font-medium leading-[1.4] mb-3">
+                  Our programmes typically provide <span className="font-bold text-[#A21246] font-serif text-[22px] sm:text-[24px]">80–120 hours</span> of learning activities per learner each year.
+                </p>
+                <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden">
+                  <div className="h-full bg-[#A21246] w-20" />
+                </div>
+              </div>
+
+              {/* Annual Exposure Box */}
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
+                <p className="text-[11px] font-mono uppercase tracking-wider text-[#64748B] mb-1.5 font-semibold">
+                  Across 604,000+ learners, this represents an estimated:
+                </p>
+                <div className="font-serif text-[36px] sm:text-[42px] font-bold text-[#04315D] tracking-tight leading-none mb-1.5">
+                  48–72 million
+                </div>
+                <p className="text-[14px] sm:text-[15px] text-[#475569] leading-snug">
+                  Learner-hours of annual learning exposure
+                </p>
+              </div>
+
+              {/* Our Reach Breakdown Card */}
+              <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 shadow-xs">
+                <div className="text-[10.5px] font-mono uppercase tracking-wider text-[#107C68] font-bold mb-3">
+                  Our reach
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D7]">
+                  <div className="flex flex-col">
+                    <span className="font-serif text-[28px] sm:text-[32px] font-bold text-[#04315D] leading-none mb-1">
+                      404K+
+                    </span>
+                    <span className="text-[13.5px] text-[#475569] leading-snug">
+                      Learners reached directly
+                    </span>
+                  </div>
+                  <div className="flex flex-col pt-3 sm:pt-0 sm:pl-5">
+                    <span className="font-serif text-[28px] sm:text-[32px] font-bold text-[#107C68] leading-none mb-1">
+                      200K+
+                    </span>
+                    <span className="text-[13.5px] text-[#475569] leading-snug">
+                      Learners reached through partner organisations
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            {/* RIGHT COLUMN (Span 6): Core Narrative & Philosophy */}
+            <div className="lg:col-span-6 flex flex-col justify-start">
+              
+              {/* Main Section Headline */}
+              <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-4">
+                We measure more than the number of learners reached.
+              </h2>
+
+              {/* Sub-paragraph */}
+              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
+                Impact is not only about how many people experience a programme. It is also about the depth of that experience.
+              </p>
+
+              {/* Narrative on Direct Engagement and Partnerships */}
+              <div className="bg-white border-l-3 border-[#04315D] border-y border-r border-[#E8E2D7] rounded-r-2xl p-4 sm:p-4.5 shadow-2xs mb-4">
+                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+                  This combination of direct engagement and partnerships allows Ignis to reach large populations while continuously learning from the communities we serve.
+                </p>
+              </div>
+
+              {/* Footnote / Basis Note */}
+              <p className="text-[11.5px] sm:text-[12.5px] text-[#718096] leading-relaxed font-mono border-t border-[#E8E2D7] pt-3">
+                Learner-hour estimates are based on 604,000+ learners and an estimated 80–120 hours of annual learning activities per learner.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* ============================================================== */}
+      {/* SECTION 05 — CAPITAL EFFICIENCY                                 */}
+      {/* Left: Text from Document | Right: Blended Classroom Image       */}
+      {/* ============================================================== */}
+      <section id="capital-efficiency" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#F8F5EF] border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
+        {/* Subtle radial ambient gradients */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#A21246]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
+
+        <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
+          
+          {/* Section Marker */}
+          <div className="flex items-center gap-2.5 mb-6 sm:mb-8">
+            <span className="w-8 h-[2px] bg-[#A21246]" aria-hidden="true" />
+            <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#A21246]">
+              05 — CAPITAL EFFICIENCY
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            {/* LEFT COLUMN (Span 6): Text from Document */}
+            <div className="lg:col-span-6 flex flex-col justify-start">
+              
+              {/* Main Headline */}
+              <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-6">
+                Turning investment into learning at scale
+              </h2>
+
+              {/* Lead Paragraph */}
+              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
+                The $450,000 raised by Ignis has supported the capabilities needed to design, deliver and scale learning—including research, people, technology, learning resources and partnerships.
+              </p>
+
+              {/* Secondary Lead */}
+              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-6">
+                The relationship between our investment and aggregate reach provides a simple view of capital efficiency.
+              </p>
+
+              {/* Highlighted Capital Efficiency Metric Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-6">
+                
+                {/* Metric 1: ~$0.75 (Highlighted) */}
+                <div className="bg-white border-2 border-[#A21246] rounded-2xl p-5 sm:p-6 shadow-sm">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#A21246] font-bold block mb-1.5">
+                    Efficiency Metric
+                  </span>
+                  <div className="font-serif text-[38px] sm:text-[44px] font-bold text-[#A21246] leading-none mb-2">
+                    ~$0.75
+                  </div>
+                  <p className="text-[14px] sm:text-[15px] text-[#04315D] font-medium leading-snug">
+                    Capital raised per learner reached
+                  </p>
+                </div>
+
+                {/* Metric 2: <1¢ */}
+                <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 shadow-2xs">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#64748B] font-semibold block mb-1.5">
+                    Unit Economics
+                  </span>
+                  <div className="font-serif text-[38px] sm:text-[44px] font-bold text-[#04315D] leading-none mb-2">
+                    &lt;1¢
+                  </div>
+                  <p className="text-[14px] sm:text-[15px] text-[#475569] leading-snug">
+                    Capital raised per learner-hour
+                  </p>
+                </div>
+
+              </div>
+
+              {/* Explanation Note */}
+              <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4">
+                These figures illustrate the scale of learning exposure associated with the capital raised.
+              </p>
+
+              {/* Disclaimer Footnote */}
+              <p className="text-[12px] sm:text-[13px] text-[#718096] leading-relaxed font-mono border-t border-[#E8E2D7] pt-3.5">
+                Capital-efficiency metrics are calculated using $450,000 of investment, 604,000+ learners and estimated annual learner-hours. They are not financial returns or a formal Social Return on Investment (SROI) calculation.
+              </p>
+
+            </div>
+
+            {/* RIGHT COLUMN (Span 6): Authentic Blended Classroom Image */}
+            <div className="lg:col-span-6 relative flex justify-center">
+              <div className="relative w-full max-w-[580px] rounded-3xl overflow-hidden shadow-lg border border-[#E8E2D7]/80 bg-[#E8E2D7]/30 group">
+                
+                {/* Authentic Documentary Classroom Image */}
+                <Image
+                  src="/images/reach_depth_classroom.jpg"
+                  alt="Students engaged in deep, hands-on learning activities"
+                  width={1024}
+                  height={768}
+                  className="w-full h-auto object-cover aspect-4/3 transition-transform duration-700"
+                />
+
+                {/* Soft gradient blend overlays for harmony with canvas */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#04315D]/40 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-3xl pointer-events-none" />
+
+                {/* Floating pill badge on the image */}
+                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full border border-white/60 shadow-sm flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#107C68] animate-pulse" />
+                  <span className="text-[12px] sm:text-[13px] font-medium text-[#04315D]">
+                    Hands-on learning in action
+                  </span>
+                </div>
               </div>
             </div>
 

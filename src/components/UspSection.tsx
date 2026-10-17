@@ -41,46 +41,47 @@ export default function UspSection() {
       <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#A21246]/5 rounded-full blur-3xl opacity-30 pointer-events-none" />
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 xl:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-14 items-center">
           
           {/* Left Column: Client Narrative & Editorial Rationale */}
-          <div className="lg:col-span-5 flex flex-col justify-start lg:pt-1">
-            
-            {/* Eyebrow */}
-            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
-              <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
-                The Ignis Difference
-              </span>
-            </div>
+          <div className="lg:col-span-7 flex flex-col justify-start">
+            <div>
+              {/* Eyebrow */}
+              <div className="flex items-center gap-2.5 mb-3.5">
+                <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
+                <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
+                  The Ignis Difference
+                </span>
+              </div>
 
-            {/* Headline */}
-            <h2 className="font-serif text-[34px] sm:text-[40px] lg:text-[44px] xl:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-6">
-              Life Skills are not an extra subject.{" "}
-              <span className="text-[#AF1B49] italic font-serif block sm:inline">
-                They are what learning is for.
-              </span>
-            </h2>
+              {/* Headline */}
+              <h2 className="font-serif text-[30px] sm:text-[36px] lg:text-[40px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-4">
+                Life Skills are not an extra subject.{" "}
+                <span className="text-[#AF1B49] italic font-serif block sm:inline">
+                  They are what learning is for.
+                </span>
+              </h2>
 
-            {/* Narrative Paragraphs */}
-            <div className="space-y-4 text-sm sm:text-[15px] leading-relaxed text-[#556987] font-normal mb-8">
-              <p>
-                Young people need more than knowledge to navigate education, work and everyday life. They need to be able to communicate, think critically, make decisions, solve problems, understand themselves and work with others.
-              </p>
-              <p className="font-medium text-[#04315D]">
-                Ignis builds these capabilities into everyday learning.
-              </p>
+              {/* Narrative Paragraphs */}
+              <div className="space-y-3 text-sm sm:text-[15px] leading-relaxed text-[#556987] font-normal mb-5">
+                <p>
+                  Young people need more than knowledge to navigate education, work and everyday life. They need to be able to communicate, think critically, make decisions, solve problems, understand themselves and work with others.
+                </p>
+                <p className="font-medium text-[#04315D]">
+                  Ignis builds these capabilities into everyday learning.
+                </p>
+              </div>
             </div>
 
             {/* Quote / Punchline Box */}
-            <div className="relative bg-[#F8F5EF] border-l-4 border-[#AF1B49] rounded-r-xl p-6 sm:p-7 shadow-sm">
+            <div className="relative bg-[#F8F5EF] border-l-4 border-[#AF1B49] rounded-r-xl p-4 sm:p-5 shadow-sm">
               <div className="flex items-start gap-3">
-                <Sparkles className="w-5 h-5 text-[#AF1B49] shrink-0 mt-1" />
+                <Sparkles className="w-5 h-5 text-[#AF1B49] shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[15px] sm:text-[16px] leading-[1.65] text-[#1E293B] italic font-serif">
+                  <p className="text-[14px] sm:text-[15px] leading-[1.6] text-[#1E293B] italic font-serif">
                     “We don’t teach English, Science and Maths as mere subjects for test scores. We help learners use what they learn to understand and respond to real situations and solve real-life problems.”
                   </p>
-                  <span className="block mt-3 text-[12px] font-bold tracking-wider uppercase text-[#64748B]">
+                  <span className="block mt-2 text-[11px] font-bold tracking-wider uppercase text-[#64748B]">
                     The Ignis Pedagogical Philosophy
                   </span>
                 </div>
@@ -89,28 +90,28 @@ export default function UspSection() {
 
           </div>
 
-          {/* Right Column: Venn Diagram Integrated Model (Matching Shared Image) */}
-          <div className="lg:col-span-7">
-            <div className="bg-[#FAF8F5] border border-[#E8E2D7] rounded-3xl p-5 sm:p-8 lg:p-9 shadow-sm relative overflow-hidden">
+          {/* Right Column: Balanced Venn Diagram Integrated Model */}
+          <div className="lg:col-span-5 w-full flex justify-center lg:justify-end">
+            <div className="w-full max-w-[450px] bg-[#FAF8F5] border border-[#E8E2D7] rounded-2xl p-4 sm:p-5 shadow-sm relative overflow-hidden">
               
               {/* Header Badge */}
-              <div className="flex items-center justify-between border-b border-[#E8E2D7] pb-4 mb-5">
+              <div className="flex items-center justify-between border-b border-[#E8E2D7] pb-2.5 mb-2.5">
                 <div>
-                  <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.15em] uppercase text-[#A21246] block">
+                  <span className="text-[10.5px] font-bold tracking-[0.15em] uppercase text-[#A21246] block">
                     Pedagogical Blueprint
                   </span>
-                  <h3 className="font-serif text-[20px] sm:text-[22px] font-bold text-[#04315D]">
+                  <h3 className="font-serif text-[17px] sm:text-[18px] font-bold text-[#04315D]">
                     The Integrated Learning Model
                   </h3>
                 </div>
-                <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 bg-white rounded-full border border-[#E2DDD5] text-[12px] text-[#64748B]">
+                <div className="hidden sm:flex items-center gap-1.5 px-2.5 py-0.5 bg-white rounded-full border border-[#E2DDD5] text-[11px] text-[#64748B]">
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#059669]" />
-                  <span>Foundational Integration</span>
+                  <span>Integrated</span>
                 </div>
               </div>
 
               {/* The Venn Diagram (English, Science, Mathematics & Life Skills Center) */}
-              <div className="relative w-full max-w-[390px] sm:max-w-[430px] mx-auto aspect-[410/360] my-2 select-none">
+              <div className="relative w-full max-w-[260px] sm:max-w-[280px] mx-auto aspect-[410/360] my-1 select-none">
                 <svg
                   viewBox="0 0 410 360"
                   className="w-full h-full overflow-visible"
@@ -317,42 +318,42 @@ export default function UspSection() {
               </div>
 
               {/* Dynamic Context Pill on Subject Interaction */}
-              <div className="min-h-[46px] flex items-center justify-center my-3 px-2">
+              <div className="min-h-[36px] flex items-center justify-center my-1.5 px-2">
                 {activeSubject ? (
                   <div className="text-center animate-fadeIn">
-                    <span className="text-[12.5px] font-bold text-[#04315D] mr-1.5">
+                    <span className="text-[11.5px] font-bold text-[#04315D] mr-1">
                       {subjects[activeSubject as keyof typeof subjects].name}:
                     </span>
-                    <span className="text-[12.5px] text-[#4A5568]">
+                    <span className="text-[11.5px] text-[#4A5568]">
                       {subjects[activeSubject as keyof typeof subjects].focus}
                     </span>
                   </div>
                 ) : (
-                  <div className="text-center text-[12px] text-[#64748B]">
-                    English + Science + Maths integrated with Life Skills to build learner agency
+                  <div className="text-center text-[11px] text-[#64748B]">
+                    English + Science + Maths integrated with Life Skills
                   </div>
                 )}
               </div>
 
               {/* Foundational Capabilities Chips */}
-              <div className="bg-white border border-[#E2DDD5] rounded-2xl p-4 sm:p-5 shadow-sm mb-4">
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#AF1B49]" />
-                    <span className="text-[12px] font-bold tracking-wider text-[#04315D] uppercase">
+              <div className="bg-white border border-[#E2DDD5] rounded-xl p-3 sm:p-3.5 shadow-sm mb-0">
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-[#AF1B49]" />
+                    <span className="text-[11px] font-bold tracking-wider text-[#04315D] uppercase">
                       FOUNDATIONAL CAPABILITIES
                     </span>
                   </div>
-                  <span className="text-[11.5px] text-[#64748B] font-medium hidden sm:inline">
-                    Developed across all subjects
+                  <span className="text-[10.5px] text-[#64748B] font-medium hidden sm:inline">
+                    Across subjects
                   </span>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {capabilities.map((cap) => (
                     <span
                       key={cap}
-                      className="inline-flex items-center px-3 py-1 rounded-full text-[12px] sm:text-[13px] font-medium bg-[#F8F5EF] text-[#334155] border border-[#E8E2D7] hover:border-[#AF1B49]/40 hover:bg-white hover:text-[#AF1B49] transition-all cursor-default"
+                      className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] sm:text-[11.5px] font-medium bg-[#F8F5EF] text-[#334155] border border-[#E8E2D7] hover:border-[#AF1B49]/40 hover:bg-white hover:text-[#AF1B49] transition-all cursor-default"
                     >
                       {cap}
                     </span>
