@@ -106,7 +106,10 @@ export default function MetricsSection() {
   ];
 
   return (
-    <section className="relative w-full bg-white border-b border-[#E8E2D7] py-8 sm:py-10 overflow-hidden">
+    <section
+      id="metrics-reach"
+      className="relative w-full bg-white border-b border-[#E8E2D7] py-8 sm:py-10 overflow-hidden"
+    >
       <div className="max-w-[1360px] mx-auto px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           

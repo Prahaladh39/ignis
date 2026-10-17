@@ -34,7 +34,10 @@ export default function UspSection() {
   };
 
   return (
-    <section className="relative w-full bg-[#FFFFFF] border-b border-[#E8E2D7] py-10 sm:py-14 lg:py-16 overflow-hidden">
+    <section
+      id="ignis-difference"
+      className="relative w-full bg-[#FFFFFF] border-b border-[#E8E2D7] py-10 sm:py-14 lg:py-16 overflow-hidden"
+    >
       
       {/* Ambient background warmth */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#F8F5EF] rounded-full blur-3xl opacity-50 pointer-events-none" />

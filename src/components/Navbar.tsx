@@ -21,6 +21,13 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: "Home",
     href: "/",
+    sections: [
+      { title: "Measurable Reach & Scale", href: "/#metrics-reach", tag: "600K+ Kids" },
+      { title: "Dialogue & Partnerships", href: "/#work-with-us", tag: "Collaborate" },
+      { title: "The Ignis Difference", href: "/#ignis-difference", tag: "Integrated" },
+      { title: "Active Learning Model", href: "/#model", tag: "6-Step Cycle" },
+      { title: "Programmes", href: "/#programmes", tag: "Curricula" },
+    ],
   },
   {
     label: "Impact",
@@ -130,8 +137,19 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Right CTA Button (Desktop & Tablets) */}
-        <div className="hidden sm:flex items-center">
+        {/* Center Floating Partner Button for Mobile & Tablets */}
+        <div className="flex lg:hidden items-center justify-center">
+          <Link
+            href="#work-with-us"
+            className="animate-cta-float inline-flex items-center gap-1.5 bg-[#A21246] hover:bg-[#860E3A] text-white text-[11.5px] xs:text-xs sm:text-[13px] font-semibold px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-md shadow-[#A21246]/25 hover:shadow-lg transition-all duration-200 border border-white/20 active:translate-y-0"
+          >
+            <span>Partner with Us</span>
+            <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
+          </Link>
+        </div>
+
+        {/* Right CTA Button (Desktop only) */}
+        <div className="hidden lg:flex items-center">
           <Link
             href="#work-with-us"
             className="inline-flex items-center gap-2 bg-[#A21246] hover:bg-[#860E3A] text-white text-[14px] font-medium px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200 group"

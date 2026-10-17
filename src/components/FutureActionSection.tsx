@@ -116,9 +116,6 @@ export default function FutureActionSection() {
                 <div className="w-12 h-12 rounded-2xl bg-[#B45309]/10 text-[#B45309] flex items-center justify-center transition-transform group-hover:scale-110 duration-200 border border-[#B45309]/20">
                   <School className="w-5 h-5" />
                 </div>
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#94A3B8] font-semibold">
-                  Route 01
-                </span>
               </div>
 
               {/* Audience Eyebrow / Prominent Badge */}
@@ -170,10 +167,6 @@ export default function FutureActionSection() {
                     <Landmark className="w-4.5 h-4.5" />
                   </div>
                 </div>
-
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#94A3B8] font-semibold">
-                  Route 02
-                </span>
               </div>
 
               {/* Combined Audience Eyebrow / Prominent Badge */}

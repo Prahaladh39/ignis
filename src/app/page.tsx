@@ -20,6 +20,9 @@ export default function Home() {
       {/* Detached Counter Up / Proof Points Section */}
       <MetricsSection />
 
+      {/* Section 8: Final Action / Partnerships (Can education help young people shape their own futures?) */}
+      <FutureActionSection />
+
       {/* Core Proposition / USP Section */}
       <UspSection />
 
@@ -28,9 +31,6 @@ export default function Home() {
 
       {/* Section 7: Programmes (What we build) */}
       <ProgrammesSection />
-
-      {/* Section 8: Final Action (Can education help young people shape their own futures?) */}
-      <FutureActionSection />
 
       {/* Floating Sticky CTA on Scroll */}
       <FloatingCta />

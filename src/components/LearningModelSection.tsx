@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { 
   BookOpen, 
   Compass, 
@@ -15,62 +16,89 @@ export default function LearningModelSection() {
     {
       name: "Understand",
       icon: BookOpen,
-      accent: "text-[#04315D] bg-[#04315D]/10 border-[#04315D]/20",
-      borderHover: "hover:border-[#04315D]/50 hover:shadow-sm",
+      iconColor: "text-[#0284C7]",
+      badgeBg: "bg-[#0284C7]/10 border-[#0284C7]/30",
+      topBar: "bg-[#0284C7]",
+      numColor: "text-[#0284C7]",
+      num: "01",
     },
     {
       name: "Explore",
       icon: Compass,
-      accent: "text-[#107C68] bg-[#107C68]/10 border-[#107C68]/20",
-      borderHover: "hover:border-[#107C68]/50 hover:shadow-sm",
+      iconColor: "text-[#10B981]",
+      badgeBg: "bg-[#10B981]/10 border-[#10B981]/30",
+      topBar: "bg-[#10B981]",
+      numColor: "text-[#10B981]",
+      num: "02",
     },
     {
       name: "Discuss",
       icon: MessageSquare,
-      accent: "text-[#4338CA] bg-[#4338CA]/10 border-[#4338CA]/20",
-      borderHover: "hover:border-[#4338CA]/50 hover:shadow-sm",
+      iconColor: "text-[#8B5CF6]",
+      badgeBg: "bg-[#8B5CF6]/10 border-[#8B5CF6]/30",
+      topBar: "bg-[#8B5CF6]",
+      numColor: "text-[#8B5CF6]",
+      num: "03",
     },
     {
       name: "Apply",
       icon: FlaskConical,
-      accent: "text-[#DA8216] bg-[#DA8216]/10 border-[#DA8216]/20",
-      borderHover: "hover:border-[#DA8216]/50 hover:shadow-sm",
+      iconColor: "text-[#F59E0B]",
+      badgeBg: "bg-[#F59E0B]/10 border-[#F59E0B]/30",
+      topBar: "bg-[#F59E0B]",
+      numColor: "text-[#F59E0B]",
+      num: "04",
     },
     {
       name: "Reflect",
       icon: Lightbulb,
-      accent: "text-[#0284C7] bg-[#0284C7]/10 border-[#0284C7]/20",
-      borderHover: "hover:border-[#0284C7]/50 hover:shadow-sm",
+      iconColor: "text-[#06B6D4]",
+      badgeBg: "bg-[#06B6D4]/10 border-[#06B6D4]/30",
+      topBar: "bg-[#06B6D4]",
+      numColor: "text-[#06B6D4]",
+      num: "05",
     },
     {
       name: "Act",
       icon: Zap,
-      accent: "text-[#A21246] bg-[#A21246]/10 border-[#A21246]/20",
-      borderHover: "hover:border-[#A21246]/50 hover:shadow-sm",
+      iconColor: "text-[#EC4899]",
+      badgeBg: "bg-[#EC4899]/10 border-[#EC4899]/30",
+      topBar: "bg-[#EC4899]",
+      numColor: "text-[#EC4899]",
+      num: "06",
     },
   ];
 
   return (
     <section
       id="model"
-      className="relative w-full bg-white border-b border-[#E8E2D7] py-10 sm:py-14 lg:py-16 overflow-hidden"
+      className="relative w-full border-b border-[#E2E8F0] py-12 sm:py-16 lg:py-20 overflow-hidden"
     >
-      
-      {/* Subtle ambient background warmth */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#F8F5EF] rounded-full blur-3xl opacity-70 pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#A21246]/5 rounded-full blur-3xl opacity-40 pointer-events-none" />
+      {/* Background Image Container */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/learning_model_bg.jpg"
+          alt="Indian school students actively collaborating around hands-on science experiments"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center sm:object-[center_28%]"
+        />
+        {/* Light black gradient scrim - keeps image natural and clear while making white cards pop */}
+        <div className="absolute inset-0 bg-black/25 sm:bg-gradient-to-t sm:from-black/45 sm:via-black/20 sm:to-black/30" />
+      </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-16">
         
         {/* Top Header & Editorial Context */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start mb-10 sm:mb-14 lg:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-14 items-start mb-10 sm:mb-12 lg:mb-16">
           
-          {/* Left: Eyebrow + Main Heading */}
-          <div className="lg:col-span-6">
+          {/* Left: Eyebrow + Main Heading with crisp white card backing */}
+          <div className="lg:col-span-7 bg-white/92 backdrop-blur-md p-5 sm:p-7 rounded-2xl sm:rounded-3xl border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             {/* Eyebrow */}
-            <div className="flex items-center gap-2.5 mb-3 sm:mb-4">
-              <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
+            <div className="flex items-center gap-2.5 mb-2.5 sm:mb-3">
+              <span className="w-6 h-[3px] bg-gradient-to-r from-[#A21246] via-[#F59E0B] to-[#0284C7] rounded-full" aria-hidden="true" />
+              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.18em] uppercase text-[#A21246]">
                 The Ignis Learning Model
               </span>
             </div>
@@ -80,23 +108,23 @@ export default function LearningModelSection() {
             </h2>
           </div>
 
-          {/* Right: Strict Client Explanatory Paragraphs */}
-          <div className="lg:col-span-6 space-y-3 sm:space-y-4 lg:pt-8">
-            <p className="text-[15px] sm:text-[17px] text-[#475569] leading-[1.65] font-normal">
+          {/* Right: Explanatory Paragraphs Overlaid with white glass card */}
+          <div className="lg:col-span-5 space-y-3 sm:space-y-4 bg-white/92 backdrop-blur-md p-5 sm:p-7 rounded-2xl sm:rounded-3xl border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:mt-0">
+            <p className="text-[15px] sm:text-[16px] text-[#475569] leading-[1.65] font-normal">
               Ignis programmes use stories, activities, experiments, projects, discussion and reflection to move learners beyond remembering information.
             </p>
-            <p className="text-[15px] sm:text-[17px] text-[#04315D] font-medium leading-[1.65]">
+            <p className="text-[15px] sm:text-[16px] text-[#04315D] font-medium leading-[1.65] border-l-3 border-[#A21246] pl-3">
               Learners practise using knowledge in situations that connect with their own lives, communities and aspirations.
             </p>
           </div>
 
         </div>
 
-        {/* Horizontal Six-Step Progression Cards with Unique Colored Icons */}
+        {/* Horizontal Six-Step Progression Cards Overlaid */}
         <div className="relative">
           
-          {/* Subtle continuous flow track behind cards on desktop */}
-          <div className="hidden lg:block absolute top-[44px] left-[5%] right-[5%] h-[2px] bg-gradient-to-r from-[#04315D]/15 via-[#DA8216]/25 to-[#A21246]/25 -z-0" />
+          {/* Colorful flow track behind cards on desktop */}
+          <div className="hidden lg:block absolute top-[44px] left-[5%] right-[5%] h-[3px] bg-gradient-to-r from-[#0284C7] via-[#F59E0B] to-[#EC4899] rounded-full opacity-60 -z-0" />
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-5 relative z-10">
             {steps.map((step, idx) => {
@@ -104,22 +132,30 @@ export default function LearningModelSection() {
               return (
                 <div
                   key={step.name}
-                  className={`bg-[#FAF8F5]/80 hover:bg-white border border-[#E8E2D7] rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 lg:p-6 flex flex-col justify-between transition-all duration-200 ${step.borderHover} group min-h-[135px] sm:min-h-[160px]`}
+                  className="bg-white/92 hover:bg-white backdrop-blur-md border border-white/80 hover:border-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 lg:p-6 flex flex-col justify-between transition-all duration-200 group min-h-[145px] sm:min-h-[170px] shadow-[0_8px_25px_rgb(0,0,0,0.12)] hover:shadow-[0_12px_35px_rgb(0,0,0,0.18)] hover:-translate-y-1 relative overflow-hidden"
                 >
-                  {/* Top: Colored Icon Badge & Flow Arrow */}
+                  {/* Colorful Top Accent Stripe */}
+                  <div className={`absolute top-0 left-0 right-0 h-[4px] ${step.topBar}`} />
+
+                  {/* Top: Icon Badge & Flow Arrow */}
                   <div className="flex items-center justify-between mb-3 sm:mb-4">
-                    <div className={`p-2 sm:p-2.5 rounded-xl border ${step.accent} transition-transform group-hover:scale-105 duration-200`}>
-                      <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <div className={`p-2 sm:p-2.5 rounded-xl border ${step.badgeBg} transition-transform group-hover:scale-110 duration-200 shadow-sm`}>
+                      <Icon className={`w-4 h-4 sm:w-5 sm:h-5 ${step.iconColor}`} />
                     </div>
 
-                    {idx < steps.length - 1 && (
-                      <ArrowRight className="w-4 h-4 text-[#94A3B8] hidden lg:block opacity-40 group-hover:opacity-90 group-hover:translate-x-0.5 transition-all" />
-                    )}
+                    <div className="flex items-center gap-1.5">
+                      <span className={`text-[12px] font-mono font-bold ${step.numColor} tracking-wider`}>
+                        {step.num}
+                      </span>
+                      {idx < steps.length - 1 && (
+                        <ArrowRight className="w-4 h-4 text-slate-400 hidden lg:block group-hover:text-slate-700 group-hover:translate-x-0.5 transition-all" />
+                      )}
+                    </div>
                   </div>
 
                   {/* Step Name */}
                   <div className="mt-1 sm:mt-2">
-                    <h3 className="font-serif text-[15px] min-[380px]:text-[17px] sm:text-[19px] lg:text-[21px] font-bold text-[#04315D] tracking-tight leading-tight">
+                    <h3 className="font-serif text-[16px] min-[380px]:text-[18px] sm:text-[20px] lg:text-[21px] font-bold text-[#04315D] tracking-tight leading-tight group-hover:text-[#A21246] transition-colors">
                       {step.name}
                     </h3>
                   </div>
