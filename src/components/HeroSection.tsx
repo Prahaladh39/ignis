@@ -29,11 +29,11 @@ export default function HeroSection() {
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-10 sm:pt-14 lg:pt-16 pb-14 sm:pb-18 lg:pb-24">
           <div className="w-full lg:max-w-[540px] xl:max-w-[600px] flex flex-col justify-center">
             
-            {/* Eyebrow / Tagline: Restored to original */}
+            {/* Eyebrow / Tagline: Explicitly highlight Non-Profit & Education Partnerships */}
             <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
               <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
               <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
-                Better Learning. Brighter Futures.
+                Partnering With Non-Profits, CSRs &amp; Schools
               </span>
             </div>
 

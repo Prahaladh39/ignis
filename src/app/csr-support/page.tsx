@@ -127,11 +127,11 @@ export default function CsrSupportPage() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 text-center max-w-4xl relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A21246]/10 border border-[#A21246]/20 text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>High-Impact CSR Collaborations</span>
+            <span>CSR &amp; Social Impact Partnerships</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-[#04315D] font-normal tracking-tight leading-[1.15] mb-6">
-            Partnering with CSRs, Govt and Non-Profits
+            High-Impact CSR Collaborations
           </h1>
 
           <p className="text-base sm:text-[17px] text-[#556987] font-normal leading-relaxed max-w-2xl mx-auto mb-9">
