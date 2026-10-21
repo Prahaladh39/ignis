@@ -131,7 +131,7 @@ export default function CsrSupportPage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-[#04315D] font-normal tracking-tight leading-[1.15] mb-6">
-            Transforming Classrooms Through Purposeful CSR Partnerships
+            Partnering with CSRs, Govt and Non-Profits
           </h1>
 
           <p className="text-base sm:text-[17px] text-[#556987] font-normal leading-relaxed max-w-2xl mx-auto mb-9">
