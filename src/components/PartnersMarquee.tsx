@@ -139,21 +139,13 @@ export default function PartnersMarquee({
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F8F5EF] border border-[#E2DDD5] shadow-xs text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#F8F5EF] border border-[#E2DDD5] shadow-xs text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-4">
             <span>Trusted Collaborations</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#04315D] font-normal tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#04315D] font-normal tracking-tight mb-4">
             Our Partners
           </h2>
-
-          {/* Elegant Editorial Diamond Divider (matching old brand identity in a modern aesthetic) */}
-          <div className="flex items-center justify-center gap-4 my-5">
-            <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent to-[#A21246]/40" />
-            <div className="w-2 h-2 rotate-45 bg-[#A21246]" />
-            <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-l from-transparent to-[#A21246]/40" />
-          </div>
 
           <p className="text-[#556987] text-sm sm:text-[15px] leading-relaxed font-normal">
             In our journey so far, we have collaborated with visionary companies, 
@@ -222,7 +214,7 @@ export default function PartnersMarquee({
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-lg bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-[#E8E2D7] overflow-hidden animate-modal-pop will-change-transform"
+            className="relative w-full max-w-lg bg-white rounded-2xl p-6 sm:p-8 shadow-2xl border border-[#E8E2D7] overflow-hidden animate-modal-pop will-change-transform"
           >
             {/* Top Accent Bar */}
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#A21246] via-[#04315D] to-[#107C68]" />
@@ -232,7 +224,7 @@ export default function PartnersMarquee({
               type="button"
               onClick={() => setSelectedPartner(null)}
               aria-label="Close dialog"
-              className="absolute top-4 right-4 sm:top-5 sm:right-5 p-2 rounded-full bg-[#F8F5EF] text-[#64748B] hover:text-[#04315D] hover:bg-[#EAE4D9] transition-colors cursor-pointer"
+              className="absolute top-4 right-4 sm:top-5 sm:right-5 p-2 rounded-lg bg-[#F8F5EF] text-[#64748B] hover:text-[#04315D] hover:bg-[#EAE4D9] transition-colors cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
@@ -266,7 +258,7 @@ export default function PartnersMarquee({
 
             {/* Focus Area Pill */}
             {selectedPartner.focusArea && (
-              <div className="mb-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#04315D]/5 border border-[#04315D]/15 text-[#04315D] text-[12px] font-medium">
+              <div className="mb-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#04315D]/5 border border-[#04315D]/15 text-[#04315D] text-[12px] font-medium">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#107C68]" />
                 <span>{selectedPartner.focusArea}</span>
               </div>
@@ -299,7 +291,7 @@ export default function PartnersMarquee({
               <button
                 type="button"
                 onClick={() => setSelectedPartner(null)}
-                className="px-5 py-2 rounded-full bg-[#04315D] hover:bg-[#032342] text-white text-xs font-semibold tracking-wide transition-all cursor-pointer shadow-xs"
+                className="px-5 py-2 rounded-lg bg-[#04315D] hover:bg-[#032342] text-white text-xs font-semibold tracking-wide transition-all cursor-pointer shadow-xs"
               >
                 Close
               </button>

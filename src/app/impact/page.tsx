@@ -253,156 +253,166 @@ export default function ImpactPage() {
 
       {/* ============================================================== */}
       {/* SECTION 02 — HOW IMPACT IS CREATED                             */}
-      {/* 5-Step Continuous Learning Cycle (Strict doc text, no arrows)  */}
+      {/* 5-Step Continuous Learning Cycle with Responsive Photo Background */}
       {/* ============================================================== */}
-      <section id="how-impact-is-created" className="scroll-mt-20 lg:scroll-mt-24 relative w-full bg-[#FAF8F5] border-t border-[#E8E2D7] py-8 sm:py-10 lg:py-12 overflow-hidden">
-        {/* Soft background light blooms */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FAF7F2] rounded-full blur-3xl opacity-70 pointer-events-none" />
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-[#04315D]/5 rounded-full blur-3xl opacity-30 pointer-events-none" />
+      <section id="how-impact-is-created" className="scroll-mt-20 lg:scroll-mt-24 relative w-full border-t border-[#E8E2D7] py-12 sm:py-16 lg:py-20 overflow-hidden">
+        {/* Responsive Background Image Container */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/how_impact_created_bg.jpg"
+            alt="Smiling school students gesturing thumbs-up"
+            fill
+            sizes="100vw"
+            className="object-cover object-center sm:object-[center_22%]"
+            priority
+          />
+          {/* Subtle light dark scrim so the students and their smiles are clearly and brightly visible */}
+          <div className="absolute inset-0 bg-black/25 sm:bg-gradient-to-t sm:from-black/45 sm:via-black/15 sm:to-black/30" />
+        </div>
 
         <div className="relative z-10 max-w-[1360px] mx-auto px-5 sm:px-10 lg:px-16">
           
           {/* Section Marker */}
-          <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
-            <span className="w-8 h-[2px] bg-[#04315D]" aria-hidden="true" />
-            <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-[#04315D]">
+          <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+            <span className="w-8 h-[2px] bg-white" aria-hidden="true" />
+            <span className="text-[12px] sm:text-[13px] font-mono font-bold tracking-[0.18em] uppercase text-white drop-shadow-sm">
               02 — HOW IMPACT IS CREATED
             </span>
           </div>
 
-          {/* Section Heading & Subtitle */}
-          <div className="max-w-3xl mb-6 sm:mb-8">
-            <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-3">
-              How impact is created
+          {/* Section Heading & Subtitle in elegant backdrop */}
+          <div className="max-w-3xl mb-6 sm:mb-10 bg-white/65 hover:bg-white/80 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/60 shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-colors">
+            <h2 className="font-serif text-[26px] sm:text-[36px] lg:text-[42px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-2">
+              How Impact Is Created
             </h2>
-            <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed">
+            <p className="text-[14px] sm:text-[16px] text-[#334155] leading-relaxed">
               Our model is built around a continuous learning cycle.
             </p>
           </div>
 
-          {/* The 5 Continuous Cycle Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 mb-6 sm:mb-8">
+          {/* The 5 Continuous Cycle Steps in Floating Frosted Glass Cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-2.5 sm:gap-4 lg:gap-5 mb-6 sm:mb-10">
             
             {/* Step 1: Understand */}
-            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white/45 hover:bg-white/70 backdrop-blur-md border border-white/60 hover:border-white rounded-xl sm:rounded-2xl p-3 sm:p-5 lg:p-6 flex flex-col justify-between shadow-[0_6px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
-                    <Compass className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-2.5 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-[#04315D]/15 text-[#04315D] flex items-center justify-center border border-[#04315D]/25">
+                    <Compass className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10px] sm:text-[11px] font-mono text-[#04315D] font-bold tracking-widest uppercase bg-white/70 px-1.5 sm:px-2 py-0.5 rounded-md border border-white/80">
                     01
                   </span>
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
+                <h3 className="font-serif text-[17px] sm:text-[21px] lg:text-[23px] font-bold text-[#04315D] mb-1 sm:mb-2 leading-snug">
                   Understand
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
+                <p className="text-[12px] sm:text-[14px] text-[#1E293B] leading-snug sm:leading-relaxed font-medium">
                   We study learners, their contexts, needs and aspirations.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#04315D] w-10" />
+              <div className="w-full h-1 bg-white/60 rounded-full overflow-hidden mt-3 sm:mt-5">
+                <div className="h-full bg-[#04315D] w-8 sm:w-12" />
               </div>
             </div>
 
             {/* Step 2: Design */}
-            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white/45 hover:bg-white/70 backdrop-blur-md border border-white/60 hover:border-white rounded-xl sm:rounded-2xl p-3 sm:p-5 lg:p-6 flex flex-col justify-between shadow-[0_6px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center">
-                    <Lightbulb className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-2.5 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-[#A21246]/15 text-[#A21246] flex items-center justify-center border border-[#A21246]/25">
+                    <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10px] sm:text-[11px] font-mono text-[#A21246] font-bold tracking-widest uppercase bg-white/70 px-1.5 sm:px-2 py-0.5 rounded-md border border-white/80">
                     02
                   </span>
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
+                <h3 className="font-serif text-[17px] sm:text-[21px] lg:text-[23px] font-bold text-[#04315D] mb-1 sm:mb-2 leading-snug">
                   Design
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
+                <p className="text-[12px] sm:text-[14px] text-[#1E293B] leading-snug sm:leading-relaxed font-medium">
                   Research informs relevant learning experiences, products and programmes.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#A21246] w-10" />
+              <div className="w-full h-1 bg-white/60 rounded-full overflow-hidden mt-3 sm:mt-5">
+                <div className="h-full bg-[#A21246] w-8 sm:w-12" />
               </div>
             </div>
 
             {/* Step 3: Deliver */}
-            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white/45 hover:bg-white/70 backdrop-blur-md border border-white/60 hover:border-white rounded-xl sm:rounded-2xl p-3 sm:p-5 lg:p-6 flex flex-col justify-between shadow-[0_6px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#107C68]/10 text-[#107C68] flex items-center justify-center">
-                    <Send className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-2.5 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-[#107C68]/15 text-[#107C68] flex items-center justify-center border border-[#107C68]/25">
+                    <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10px] sm:text-[11px] font-mono text-[#107C68] font-bold tracking-widest uppercase bg-white/70 px-1.5 sm:px-2 py-0.5 rounded-md border border-white/80">
                     03
                   </span>
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
+                <h3 className="font-serif text-[17px] sm:text-[21px] lg:text-[23px] font-bold text-[#04315D] mb-1 sm:mb-2 leading-snug">
                   Deliver
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
+                <p className="text-[12px] sm:text-[14px] text-[#1E293B] leading-snug sm:leading-relaxed font-medium">
                   Educators, technology and partner organisations bring these experiences to learners.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#107C68] w-10" />
+              <div className="w-full h-1 bg-white/60 rounded-full overflow-hidden mt-3 sm:mt-5">
+                <div className="h-full bg-[#107C68] w-8 sm:w-12" />
               </div>
             </div>
 
             {/* Step 4: Measure */}
-            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
+            <div className="bg-white/45 hover:bg-white/70 backdrop-blur-md border border-white/60 hover:border-white rounded-xl sm:rounded-2xl p-3 sm:p-5 lg:p-6 flex flex-col justify-between shadow-[0_6px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
-                    <BarChart3 className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-2.5 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-[#0284C7]/15 text-[#0284C7] flex items-center justify-center border border-[#0284C7]/25">
+                    <BarChart3 className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10px] sm:text-[11px] font-mono text-[#0284C7] font-bold tracking-widest uppercase bg-white/70 px-1.5 sm:px-2 py-0.5 rounded-md border border-white/80">
                     04
                   </span>
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
+                <h3 className="font-serif text-[17px] sm:text-[21px] lg:text-[23px] font-bold text-[#04315D] mb-1 sm:mb-2 leading-snug">
                   Measure
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
+                <p className="text-[12px] sm:text-[14px] text-[#1E293B] leading-snug sm:leading-relaxed font-medium">
                   We track participation, engagement and relevant learning indicators.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#04315D] w-10" />
+              <div className="w-full h-1 bg-white/60 rounded-full overflow-hidden mt-3 sm:mt-5">
+                <div className="h-full bg-[#0284C7] w-8 sm:w-12" />
               </div>
             </div>
 
             {/* Step 5: Improve */}
-            <div className="bg-white border border-[#E8E2D7] rounded-2xl p-5 sm:p-5.5 flex flex-col justify-between shadow-2xs">
+            <div className="col-span-2 sm:col-span-1 lg:col-span-1 bg-white/45 hover:bg-white/70 backdrop-blur-md border border-white/60 hover:border-white rounded-xl sm:rounded-2xl p-3 sm:p-5 lg:p-6 flex flex-col justify-between shadow-[0_6px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#AF1B49]/10 text-[#AF1B49] flex items-center justify-center">
-                    <TrendingUp className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-2.5 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-[#AF1B49]/15 text-[#AF1B49] flex items-center justify-center border border-[#AF1B49]/25">
+                    <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
+                  <span className="text-[10px] sm:text-[11px] font-mono text-[#AF1B49] font-bold tracking-widest uppercase bg-white/70 px-1.5 sm:px-2 py-0.5 rounded-md border border-white/80">
                     05
                   </span>
                 </div>
-                <h3 className="font-serif text-[20px] sm:text-[22px] font-semibold text-[#04315D] mb-2 leading-snug">
+                <h3 className="font-serif text-[17px] sm:text-[21px] lg:text-[23px] font-bold text-[#04315D] mb-1 sm:mb-2 leading-snug">
                   Improve
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
+                <p className="text-[12px] sm:text-[14px] text-[#1E293B] leading-snug sm:leading-relaxed font-medium">
                   Evidence and feedback inform the next generation of our programmes and products.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#F1EBE1] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#AF1B49] w-10" />
+              <div className="w-full h-1 bg-white/60 rounded-full overflow-hidden mt-3 sm:mt-5">
+                <div className="h-full bg-[#AF1B49] w-8 sm:w-12" />
               </div>
             </div>
 
           </div>
 
           {/* Section Summary Box */}
-          <div className="bg-white border border-[#E8E2D7] rounded-2xl p-4 sm:p-5 shadow-2xs max-w-2xl">
-            <p className="text-sm sm:text-[15px] text-[#04315D] font-medium leading-relaxed">
+          <div className="bg-white/60 hover:bg-white/75 backdrop-blur-md border border-white/60 rounded-xl sm:rounded-2xl p-3.5 sm:p-5 shadow-[0_4px_20px_rgba(0,0,0,0.05)] max-w-2xl transition-colors">
+            <p className="text-[13px] sm:text-[15px] text-[#04315D] font-medium leading-relaxed">
               The result is a model designed to learn while it scales.
             </p>
           </div>
@@ -427,7 +437,7 @@ export default function ImpactPage() {
           {/* Section Header & Narrative */}
           <div className="max-w-3xl mb-6 sm:mb-8">
             <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#04315D] tracking-tight leading-[1.12] mb-3">
-              Counting learners is not enough.
+              Counting Learners Is Not Enough
             </h2>
             <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-3">
               Reach tells us who we serve. Engagement tells us how deeply they participate. Outcomes tell us what difference the experience makes.
@@ -685,7 +695,7 @@ export default function ImpactPage() {
               
               {/* Main Headline */}
               <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-6">
-                Turning investment into learning at scale
+                Turning Investment Into Learning at Scale
               </h2>
 
               {/* Lead Paragraph */}
@@ -743,28 +753,21 @@ export default function ImpactPage() {
 
             {/* RIGHT COLUMN (Span 6): Authentic Blended Classroom Image */}
             <div className="lg:col-span-6 relative flex justify-center">
-              <div className="relative w-full max-w-[580px] rounded-3xl overflow-hidden shadow-lg border border-[#E8E2D7]/80 bg-[#E8E2D7]/30 group">
+              <div className="relative w-full max-w-[620px] rounded-3xl overflow-hidden shadow-lg border border-[#E8E2D7]/80 bg-white group">
                 
-                {/* Authentic Documentary Classroom Image */}
+                {/* Authentic Documentary Classroom Image - Full display without side cropping */}
                 <Image
-                  src="/images/reach_depth_classroom.jpg"
-                  alt="Students engaged in deep, hands-on learning activities"
+                  src="/images/capital_efficiency_ignis_students.jpg"
+                  alt="Young students proudly displaying handmade IGNIS learning letters"
                   width={1024}
-                  height={768}
-                  className="w-full h-auto object-cover aspect-4/3 transition-transform duration-700"
+                  height={576}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="w-full h-auto block transition-transform duration-700 group-hover:scale-101"
                 />
 
                 {/* Soft gradient blend overlays for harmony with canvas */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#04315D]/40 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#04315D]/25 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-3xl pointer-events-none" />
-
-                {/* Floating pill badge on the image */}
-                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full border border-white/60 shadow-sm flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#107C68] animate-pulse" />
-                  <span className="text-[12px] sm:text-[13px] font-medium text-[#04315D]">
-                    Hands-on learning in action
-                  </span>
-                </div>
               </div>
             </div>
 
@@ -794,7 +797,7 @@ export default function ImpactPage() {
 
               {/* Headline */}
               <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#04315D] tracking-tight leading-[1.12] mb-4">
-                From 604,000 to the next million
+                From 604,000 to the Next Million
               </h2>
 
               {/* Narrative paragraphs */}
@@ -855,34 +858,19 @@ export default function ImpactPage() {
 
             </div>
 
-            {/* RIGHT COLUMN (Span 6): Authentic AI Generated Classroom Visual */}
-            <div className="lg:col-span-6">
-              <div className="relative rounded-3xl overflow-hidden border border-[#E8E2D7] shadow-lg group bg-white">
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src="/images/next_million_students.jpg"
-                    alt="Indian classroom students collaborating with teacher"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
-                    priority={false}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-80" />
-                </div>
-                
-                {/* Floating caption card */}
-                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md border border-[#E8E2D7] p-4 sm:p-5 rounded-2xl shadow-sm">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <div className="text-xs font-mono font-semibold text-[#A21246] uppercase tracking-wider mb-0.5">
-                        The Road Ahead
-                      </div>
-                      <div className="text-[14px] sm:text-[15px] font-semibold text-[#04315D]">
-                        Taking quality learning deeper into smaller towns & underserved communities
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            {/* RIGHT COLUMN (Span 6): Group of Educators & Teachers Visual */}
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="relative w-full max-w-[620px] rounded-3xl overflow-hidden border border-[#E8E2D7] shadow-lg group bg-white">
+                <Image
+                  src="/images/next_stage_teachers_v2.jpg"
+                  alt="Group of educators and teachers trained by Ignis"
+                  width={1024}
+                  height={540}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="w-full h-auto block transition-transform duration-700 group-hover:scale-101"
+                  priority={false}
+                />
+                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-3xl pointer-events-none" />
               </div>
             </div>
 

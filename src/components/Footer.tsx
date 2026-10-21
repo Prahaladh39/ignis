@@ -109,7 +109,7 @@ export default function Footer() {
           {/* Contact & Dialogue */}
           <div>
             <h4 className="font-serif text-[16px] font-bold text-white mb-4">
-              Dialogue
+              Let’s Talk
             </h4>
             <div className="space-y-3 text-xs sm:text-sm text-white/70">
               <a

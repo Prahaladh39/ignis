@@ -77,15 +77,15 @@ export default function LearningModelSection() {
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/learning_model_bg.jpg"
-          alt="Indian school students actively collaborating around hands-on science experiments"
+          src="/images/students_reading_model.jpg"
+          alt="Students engaged in collaborative reading and active learning"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center sm:object-[center_28%]"
+          className="object-cover object-[38%_15%] sm:object-[center_35%]"
         />
-        {/* Light black gradient scrim - keeps image natural and clear while making white cards pop */}
-        <div className="absolute inset-0 bg-black/25 sm:bg-gradient-to-t sm:from-black/45 sm:via-black/20 sm:to-black/30" />
+        {/* Responsive scrim: stronger dark overlay on mobile so cards pop and faces remain distinct, gentle gradient on desktop */}
+        <div className="absolute inset-0 bg-black/55 sm:bg-gradient-to-t sm:from-black/45 sm:via-black/20 sm:to-black/30 backdrop-blur-[0.5px] sm:backdrop-blur-none" />
       </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-16">
@@ -104,7 +104,7 @@ export default function LearningModelSection() {
             </div>
 
             <h2 className="font-serif text-[32px] sm:text-[42px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal">
-              From knowledge to capability
+              From Knowledge to Capability
             </h2>
           </div>
 

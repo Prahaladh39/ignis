@@ -1,18 +1,140 @@
 "use client";
 
 import { useState } from "react";
+import type { ComponentType } from "react";
+import { ArrowRight, X } from "lucide-react";
+import { ArrowIcon, HeartIcon, LandmarkIcon, SchoolIcon, TrendIcon } from "./audience/icons";
 import {
-  ArrowRight,
-  School,
-  HeartHandshake,
-  Landmark,
-  Coins,
-  X,
-  Sparkles,
-} from "lucide-react";
+  CommunityIllustration,
+  GrowthIllustration,
+  SchoolIllustration,
+} from "./audience/illustrations";
+
+type IconComponent = ComponentType<{ className?: string }>;
+
+type Theme = {
+  card: string;
+  title: string;
+  mark: string;
+  cta: string;
+  ctaArrow: string;
+};
+
+type CardData = {
+  id: string;
+  audience: string;
+  audienceSize: string;
+  tagline?: { lead: string; highlight: string };
+  icons: { Icon: IconComponent; tile: string }[];
+  badge?: string;
+  rows?: { label: string; text: string; labelClass: string; boxClass: string }[];
+  Illustration: ComponentType<{ className?: string }>;
+  illustrationMinH: string;
+  cta: { label: string; modalAudience: string };
+  theme: Theme;
+};
+
+const tiles = {
+  orange:
+    "bg-[linear-gradient(145deg,#FFA45B,#D4500A)] shadow-[inset_0_2px_0_rgba(255,255,255,0.45),0_14px_24px_-10px_rgba(212,80,10,0.7)]",
+  teal: "bg-[linear-gradient(145deg,#3FC5A6,#0B6B58)] shadow-[inset_0_2px_0_rgba(255,255,255,0.45),0_14px_24px_-10px_rgba(15,143,116,0.7)]",
+  pink: "bg-[linear-gradient(145deg,#FF7FA8,#B3144A)] shadow-[inset_0_2px_0_rgba(255,255,255,0.45),0_14px_24px_-10px_rgba(179,20,74,0.6)]",
+  crimson:
+    "bg-[linear-gradient(145deg,#FF6C9D,#B20F47)] shadow-[inset_0_2px_0_rgba(255,255,255,0.45),0_14px_24px_-10px_rgba(214,22,90,0.75)]",
+};
+
+const CARDS: CardData[] = [
+  {
+    id: "schools",
+    audience: "With Schools",
+    audienceSize: "text-[24px] sm:text-[27px]",
+    icons: [{ Icon: SchoolIcon, tile: tiles.orange }],
+    rows: [
+      {
+        label: "Programme 01",
+        text: "English and Life Skills",
+        labelClass: "text-[#D4500A]",
+        boxClass:
+          "border-[#FCE5D4] shadow-[0_8px_18px_-14px_rgba(212,80,10,0.45)]",
+      },
+      {
+        label: "Programme 02",
+        text: "Life Skills, Science and Mathematics",
+        labelClass: "text-[#D4500A]",
+        boxClass:
+          "border-[#FCE5D4] shadow-[0_8px_18px_-14px_rgba(212,80,10,0.45)]",
+      },
+    ],
+    Illustration: SchoolIllustration,
+    illustrationMinH: "min-h-[90px]",
+    cta: { label: "Explore this route", modalAudience: "With Schools" },
+    theme: {
+      card: "border border-[#E8E2D7] bg-white shadow-sm hover:shadow-md",
+      title: "text-[#04315D]",
+      mark: "bg-[linear-gradient(rgba(255,178,122,0.6),rgba(255,178,122,0.6))]",
+      cta: "bg-[linear-gradient(100deg,#D4500A,#F08A2E)] shadow-[0_12px_22px_-8px_rgba(212,80,10,0.6)]",
+      ctaArrow: "text-[#D4500A]",
+    },
+  },
+  {
+    id: "ngos-governments",
+    audience: "With NGOs, Foundations & Governments",
+    audienceSize: "text-[21px] sm:text-[23px]",
+    icons: [
+      { Icon: HeartIcon, tile: tiles.teal },
+      { Icon: LandmarkIcon, tile: tiles.teal },
+    ],
+    rows: [
+      {
+        label: "NGOs & Foundations",
+        text: "Design and implement programmes for underserved learners.",
+        labelClass: "text-[#0B6B58]",
+        boxClass:
+          "border-[#D3ECE4] shadow-[0_8px_18px_-14px_rgba(15,143,116,0.5)]",
+      },
+      {
+        label: "Governments & Education Systems",
+        text: "Build scalable models for teachers, schools and communities.",
+        labelClass: "text-[#0B6B58]",
+        boxClass:
+          "border-[#D3ECE4] shadow-[0_8px_18px_-14px_rgba(15,143,116,0.5)]",
+      },
+    ],
+    Illustration: CommunityIllustration,
+    illustrationMinH: "min-h-[90px]",
+    cta: { label: "Explore partnership models", modalAudience: "With NGOs, Foundations & Governments" },
+    theme: {
+      card: "border border-[#E8E2D7] bg-white shadow-sm hover:shadow-md",
+      title: "text-[#04315D]",
+      mark: "",
+      cta: "bg-[linear-gradient(100deg,#0B6B58,#2FB898)] shadow-[0_12px_22px_-8px_rgba(15,143,116,0.6)]",
+      ctaArrow: "text-[#0B6B58]",
+    },
+  },
+  {
+    id: "funders-investors",
+    audience: "With Funders & Investors",
+    audienceSize: "text-[24px] sm:text-[27px]",
+    tagline: {
+      lead: "Support the next generation for ",
+      highlight: "contextual and technology-enabled learning.",
+    },
+    icons: [{ Icon: TrendIcon, tile: tiles.crimson }],
+    badge: "✦ Strategic scale",
+    Illustration: GrowthIllustration,
+    illustrationMinH: "min-h-[100px]",
+    cta: { label: "Explore funding routes", modalAudience: "With Funders & Investors" },
+    theme: {
+      card: "border border-[#E8E2D7] bg-white shadow-sm hover:shadow-md",
+      title: "text-[#04315D]",
+      mark: "bg-[linear-gradient(rgba(255,140,180,0.55),rgba(255,140,180,0.55))]",
+      cta: "bg-[linear-gradient(100deg,#B20F47,#F0467F)] shadow-[0_12px_22px_-8px_rgba(214,22,90,0.65)]",
+      ctaArrow: "text-[#B20F47]",
+    },
+  },
+];
 
 export default function FutureActionSection() {
-  const [selectedRoute, setSelectedRoute] = useState<string>("funders");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalAudience, setModalAudience] = useState<string>("For Funders & Investors");
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -20,6 +142,7 @@ export default function FutureActionSection() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     organization: "",
     message: "",
   });
@@ -37,33 +160,40 @@ export default function FutureActionSection() {
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setIsSubmitted(false);
-    setFormData({ name: "", email: "", organization: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", organization: "", message: "" });
   };
 
   return (
     <section
       id="work-with-us"
-      className="relative w-full bg-[#FAF8F5] pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 lg:pb-16 overflow-hidden border-b border-[#E8E2D7]"
+      aria-label="Ways to get involved"
+      className="relative w-full bg-[#FAF8F5] pt-10 sm:pt-14 lg:pt-16 pb-16 sm:pb-20 lg:pb-24 overflow-hidden border-b border-[#E8E2D7]"
     >
+      {/* Subtle dotted backdrop */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-[radial-gradient(rgba(11,42,74,0.07)_1px,transparent_1px)] bg-[length:24px_24px] pointer-events-none"
+      />
+
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-16">
         
         {/* ============================================================== */}
         {/* MAIN PITCH: Can education help young people shape futures?      */}
         {/* ============================================================== */}
-        <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
           {/* Eyebrow */}
           <div className="flex items-center justify-center gap-2.5 mb-3 sm:mb-3.5">
             <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
-              Dialogue & Partnerships
+              Let’s Talk
             </span>
             <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
           </div>
 
           {/* Heading (Exact Client Copy) */}
           <h2 className="font-serif text-[34px] sm:text-[46px] lg:text-[54px] leading-[1.12] tracking-[-0.02em] font-normal text-[#04315D] mb-5">
-            Can education help young people <br className="hidden sm:inline" />
-            shape their own futures?
+            Can Education Help Young People <br className="hidden sm:inline" />
+            Shape Their Own Futures?
           </h2>
 
           {/* Subhead (Exact Client Copy) */}
@@ -71,12 +201,12 @@ export default function FutureActionSection() {
             We believe it can—when learning gives young people not just knowledge, but the confidence and capability to use it.
           </p>
 
-          {/* Primary CTA Button (Exact Client Copy) */}
+          {/* Primary CTA Button */}
           <div className="flex justify-center">
             <button
               type="button"
               onClick={() => handleOpenModal("General Inquiry")}
-              className="group inline-flex items-center gap-3 px-8 sm:px-9 py-3.5 sm:py-4 rounded-full bg-[#A21246] hover:bg-[#850D37] text-white text-[15px] font-semibold transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+              className="group inline-flex items-center gap-3 px-8 sm:px-9 py-3.5 sm:py-4 rounded-xl bg-[#A21246] hover:bg-[#850D37] text-white text-[15px] font-semibold transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
               <span>Talk to Ignis</span>
               <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
@@ -85,183 +215,108 @@ export default function FutureActionSection() {
         </div>
 
         {/* ============================================================== */}
-        {/* 3 CLEAN PATHWAY CARDS                                          */}
-        {/* Card 1: For Schools                                            */}
-        {/* Card 2: Combined For NGOs, Foundations & Governments           */}
-        {/* Card 3: For Funders & Investors (BIG CARD with increased font) */}
+        {/* NEW DESIGN: 3 VIBRANT AUDIENCE CARDS WITH VECTOR ILLUSTRATIONS */}
         {/* ============================================================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch mb-16 sm:mb-20">
-          
-          {/* ------------------------------------------------------------ */}
-          {/* CARD 1: FOR SCHOOLS                                          */}
-          {/* ------------------------------------------------------------ */}
-          <div
-            onClick={() => {
-              setSelectedRoute("schools");
-              handleOpenModal("For Schools");
-            }}
-            onMouseEnter={() => setSelectedRoute("schools")}
-            className={`group relative bg-white border rounded-3xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 cursor-pointer shadow-sm hover:shadow-xl hover:-translate-y-1.5 ${
-              selectedRoute === "schools"
-                ? "border-[#B45309] ring-2 ring-[#B45309]/15 shadow-md"
-                : "border-[#E8E2D7] hover:border-[#B45309]/40"
-            }`}
-          >
-            {/* Top Accent Color Bar */}
-            <div className="absolute top-0 left-8 right-8 h-[3px] bg-[#B45309] rounded-b-full transition-all group-hover:left-4 group-hover:right-4" />
-
-            <div>
-              {/* Header: Icon & Indicator */}
-              <div className="flex items-center justify-between mb-6 pt-1">
-                <div className="w-12 h-12 rounded-2xl bg-[#B45309]/10 text-[#B45309] flex items-center justify-center transition-transform group-hover:scale-110 duration-200 border border-[#B45309]/20">
-                  <School className="w-5 h-5" />
-                </div>
-              </div>
-
-              {/* Audience Eyebrow / Prominent Badge */}
-              <div className="mb-4">
-                <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#B45309]/10 text-[#B45309] font-mono text-[16px] sm:text-[18px] uppercase tracking-[0.10em] font-extrabold border border-[#B45309]/30 shadow-xs">
-                  For Schools
-                </span>
-              </div>
-
-              {/* Action Headline (Exact Client Copy) */}
-              <p className="font-serif text-[21px] sm:text-[23px] leading-snug font-bold text-[#04315D] mb-6">
-                Build a stronger learning culture.
-              </p>
-            </div>
-
-            {/* Bottom Action Link */}
-            <div className="pt-4 border-t border-[#E8E2D7]/80 flex items-center justify-between text-xs font-semibold text-[#04315D] group-hover:text-[#B45309] transition-colors">
-              <span>Explore this route</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </div>
-          </div>
-
-          {/* ------------------------------------------------------------ */}
-          {/* CARD 2: COMBINED FOR NGOS, FOUNDATIONS & GOVERNMENTS         */}
-          {/* ------------------------------------------------------------ */}
-          <div
-            onClick={() => {
-              setSelectedRoute("ngos-gov");
-              handleOpenModal("For NGOs, Foundations & Governments");
-            }}
-            onMouseEnter={() => setSelectedRoute("ngos-gov")}
-            className={`group relative bg-white border rounded-3xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 cursor-pointer shadow-sm hover:shadow-xl hover:-translate-y-1.5 ${
-              selectedRoute === "ngos-gov"
-                ? "border-[#0D5C4D] ring-2 ring-[#0D5C4D]/15 shadow-md"
-                : "border-[#E8E2D7] hover:border-[#0D5C4D]/40"
-            }`}
-          >
-            {/* Top Accent Color Bar */}
-            <div className="absolute top-0 left-8 right-8 h-[3px] bg-gradient-to-r from-[#0D5C4D] to-[#A21246] rounded-b-full transition-all group-hover:left-4 group-hover:right-4" />
-
-            <div>
-              {/* Header: Dual Icons & Indicator */}
-              <div className="flex items-center justify-between mb-5 pt-1">
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-xl bg-[#0D5C4D]/10 text-[#0D5C4D] flex items-center justify-center transition-transform group-hover:scale-105 duration-200 border border-[#0D5C4D]/20">
-                    <HeartHandshake className="w-4.5 h-4.5" />
+        <div className="relative mx-auto grid max-w-[1140px] grid-cols-1 items-stretch gap-5 sm:gap-6 min-[900px]:grid-cols-3 mb-12 sm:mb-16">
+          {CARDS.map(
+            ({
+              id,
+              audience,
+              audienceSize,
+              tagline,
+              icons,
+              badge,
+              rows,
+              Illustration,
+              illustrationMinH,
+              cta,
+              theme,
+            }) => (
+              <article
+                key={id}
+                onClick={() => handleOpenModal(cta.modalAudience)}
+                className={`group relative flex flex-col overflow-hidden rounded-[26px] p-[22px] sm:p-[26px] transition-transform duration-[400ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] hover:-translate-y-2 min-[900px]:min-h-[530px] cursor-pointer ${theme.card}`}
+              >
+                {/* icon tiles (+ optional badge) */}
+                <div className="relative flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    {icons.map(({ Icon, tile }, i) => (
+                      <div
+                        key={i}
+                        className={`flex h-11 w-11 items-center justify-center rounded-[14px] ${tile}`}
+                      >
+                        <Icon className="h-5.5 w-5.5 text-white" />
+                      </div>
+                    ))}
                   </div>
-                  <div className="w-10 h-10 rounded-xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center transition-transform group-hover:scale-105 duration-200 border border-[#A21246]/20">
-                    <Landmark className="w-4.5 h-4.5" />
+                  {badge && (
+                    <span className="rounded-full bg-[linear-gradient(100deg,#B20F47,#E0457F)] px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-white">
+                      {badge}
+                    </span>
+                  )}
+                </div>
+
+                {/* big audience title */}
+                <h3
+                  className={`relative mt-4 self-start font-display font-extrabold leading-[1.1] tracking-[-0.02em] ${audienceSize} ${theme.title}`}
+                >
+                  {audience}
+                </h3>
+
+                {tagline && (
+                  <p className="relative mt-2 font-display text-[18px] sm:text-[20px] font-bold leading-[1.25] tracking-[-0.01em] text-[#0B2A4A]">
+                    {tagline.lead}
+                    <span>
+                      {tagline.highlight}
+                    </span>
+                  </p>
+                )}
+
+                {rows && (
+                  <div className="relative mt-3.5 flex flex-col gap-2.5">
+                    {rows.map((row) => (
+                      <div
+                        key={row.label}
+                        className={`rounded-[16px] border bg-white/85 px-3.5 py-2.5 ${row.boxClass}`}
+                      >
+                        <p
+                          className={`font-mono text-[10px] font-bold uppercase tracking-[0.14em] ${row.labelClass}`}
+                        >
+                          {row.label}
+                        </p>
+                        <p className="mt-1 font-display text-[15px] sm:text-[16px] font-extrabold leading-[1.25] text-[#0B2A4A]">
+                          {row.text}
+                        </p>
+                      </div>
+                    ))}
                   </div>
+                )}
+
+                {/* illustration (bleeds to the card edges) */}
+                <div
+                  className={`-mx-[22px] sm:-mx-[26px] mb-3 mt-1 flex flex-1 items-end ${illustrationMinH}`}
+                >
+                  <Illustration className="block h-auto w-full transition-transform duration-[600ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:-translate-y-1 group-hover:scale-105" />
                 </div>
-              </div>
 
-              {/* Combined Audience Eyebrow / Prominent Badge */}
-              <div className="mb-4">
-                <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#0D5C4D]/10 text-[#0D5C4D] font-mono text-[16px] sm:text-[18px] uppercase tracking-[0.10em] font-extrabold border border-[#0D5C4D]/30 shadow-xs">
-                  For NGOs, Foundations & Governments
-                </span>
-              </div>
-
-              {/* Dual-Stream Action Modules (Both Exact Client Copies Included) */}
-              <div className="space-y-4 mb-6">
-                <div className="pb-3.5 border-b border-[#F1EBE1]">
-                  <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#0D5C4D] block mb-1">
-                    NGOs & Foundations
+                {/* CTA with moving white light shimmer */}
+                <div
+                  className={`shimmer-btn group/cta relative flex items-center justify-between overflow-hidden rounded-full py-2.5 pl-4 sm:pl-5 pr-2 sm:pr-2.5 text-[13.5px] sm:text-[14px] font-bold text-white no-underline shadow-md ${theme.cta}`}
+                >
+                  <span className="relative z-10 whitespace-nowrap truncate">{cta.label}</span>
+                  <span className="relative z-10 flex h-[30px] w-[30px] sm:h-[32px] sm:w-[32px] items-center justify-center rounded-full bg-white transition-transform group-hover/cta:translate-x-1 shrink-0 ml-2">
+                    <ArrowIcon className={`h-3.5 w-3.5 sm:h-4 sm:w-4 ${theme.ctaArrow}`} />
                   </span>
-                  <p className="font-serif text-[17px] sm:text-[18px] leading-snug font-bold text-[#04315D]">
-                    Design and implement programmes for underserved learners.
-                  </p>
                 </div>
-
-                <div>
-                  <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#A21246] block mb-1">
-                    Governments & Education Systems
-                  </span>
-                  <p className="font-serif text-[17px] sm:text-[18px] leading-snug font-bold text-[#04315D]">
-                    Build scalable models for teachers, schools and communities.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Action Link */}
-            <div className="pt-4 border-t border-[#E8E2D7]/80 flex items-center justify-between text-xs font-semibold text-[#04315D] group-hover:text-[#0D5C4D] transition-colors">
-              <span>Explore partnership models</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </div>
-          </div>
-
-          {/* ------------------------------------------------------------ */}
-          {/* CARD 3: FOR FUNDERS & INVESTORS                              */}
-          {/* ------------------------------------------------------------ */}
-          <div
-            onClick={() => {
-              setSelectedRoute("funders");
-              handleOpenModal("For Funders & Investors");
-            }}
-            onMouseEnter={() => setSelectedRoute("funders")}
-            className={`group relative bg-white border-2 rounded-3xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 cursor-pointer shadow-sm hover:shadow-xl hover:-translate-y-1.5 ${
-              selectedRoute === "funders"
-                ? "border-[#A21246] ring-3 ring-[#A21246]/15 shadow-md"
-                : "border-[#A21246]/50 hover:border-[#A21246]"
-            }`}
-          >
-            {/* Top Prominent Accent Color Bar */}
-            <div className="absolute top-0 left-6 right-6 h-[4px] bg-[#A21246] rounded-b-full transition-all group-hover:left-3 group-hover:right-3" />
-
-            <div>
-              {/* Header: Large Icon & Prominent Highlight Pill */}
-              <div className="flex items-center justify-between mb-5 pt-1">
-                <div className="w-12 h-12 rounded-2xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center transition-transform group-hover:scale-110 duration-200 border border-[#A21246]/25 shadow-xs">
-                  <Coins className="w-6 h-6" />
-                </div>
-
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#A21246]/10 border border-[#A21246]/20 text-[#A21246] text-[11px] font-mono font-bold uppercase tracking-wider">
-                  <Sparkles className="w-3.5 h-3.5" />
-                  <span>Strategic Scale</span>
-                </div>
-              </div>
-
-              {/* Large Audience Eyebrow / Prominent Badge */}
-              <div className="mb-4">
-                <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#A21246]/10 text-[#A21246] font-mono text-[16px] sm:text-[18px] uppercase tracking-[0.10em] font-extrabold border border-[#A21246]/30 shadow-xs">
-                  For Funders & Investors
-                </span>
-              </div>
-
-              {/* Headline Action (Font size matched to other cards: text-[17px] sm:text-[18px]) */}
-              <p className="font-serif text-[17px] sm:text-[18px] leading-snug font-bold text-[#04315D] mb-6">
-                Support the next generation for contextual and technology-enabled learning.
-              </p>
-            </div>
-
-            {/* Bottom Action Link (Matched to text-xs font-semibold) */}
-            <div className="pt-4 border-t border-[#E8E2D7]/80 flex items-center justify-between text-xs font-semibold text-[#04315D] group-hover:text-[#A21246] transition-colors">
-              <span>Explore investment & funding routes</span>
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </div>
-          </div>
-
+              </article>
+            ),
+          )}
         </div>
 
         {/* ============================================================== */}
         {/* CENTRAL CONVICTION QUOTE (Exact Client Copy)                   */}
         {/* ============================================================== */}
-        <div className="relative rounded-3xl bg-white border border-[#E8E2D7] p-6 sm:p-8 text-center max-w-4xl mx-auto shadow-sm mt-10 sm:mt-12">
+        <div className="relative rounded-2xl bg-white border border-[#E8E2D7] p-6 sm:p-8 text-center max-w-4xl mx-auto shadow-sm mt-10 sm:mt-12">
           <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-[#A21246] font-bold mb-2.5">
             The Central Conviction
           </div>
@@ -284,14 +339,14 @@ export default function FutureActionSection() {
           aria-modal="true"
         >
           <div
-            className="relative w-full max-w-lg bg-[#FAF8F5] text-[#2D3748] rounded-3xl p-6 sm:p-8 border border-[#E8E2D7] shadow-2xl overflow-hidden"
+            className="relative w-full max-w-lg bg-[#FAF8F5] text-[#2D3748] rounded-2xl p-6 sm:p-8 border border-[#E8E2D7] shadow-2xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button
               type="button"
               onClick={handleCloseModal}
-              className="absolute top-5 right-5 w-9 h-9 rounded-full bg-white border border-[#E8E2D7] flex items-center justify-center text-[#475569] hover:text-[#04315D] transition-colors cursor-pointer"
+              className="absolute top-5 right-5 w-9 h-9 rounded-lg bg-white border border-[#E8E2D7] flex items-center justify-center text-[#475569] hover:text-[#04315D] transition-colors cursor-pointer"
               aria-label="Close dialog"
             >
               <X className="w-4 h-4" />
@@ -304,7 +359,7 @@ export default function FutureActionSection() {
                     {modalAudience}
                   </span>
                   <h3 className="font-serif text-[24px] sm:text-[28px] font-bold text-[#04315D] leading-tight mb-2">
-                    Talk to Ignis
+                    Let’s Talk
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569]">
                     Connect directly with our programmatic team to discuss tailored implementation for your institution.
@@ -324,7 +379,7 @@ export default function FutureActionSection() {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
                     />
                   </div>
 
@@ -340,23 +395,40 @@ export default function FutureActionSection() {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
                     />
                   </div>
 
                   <div>
                     <label className="block text-xs font-bold font-mono text-[#04315D] uppercase tracking-wider mb-1.5">
-                      Organization / Institution *
+                      Phone Number (Optional)
                     </label>
                     <input
-                      required
+                      type="tel"
+                      placeholder="+91 98765 43210"
+                      value={formData.phone}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold font-mono text-[#04315D] uppercase tracking-wider mb-1.5">
+                      Organization / School Name
+                    </label>
+                    <input
                       type="text"
-                      placeholder="Organization or Foundation Name"
+                      placeholder="Government High School / CSR Foundation"
                       value={formData.organization}
                       onChange={(e) =>
-                        setFormData({ ...formData, organization: e.target.value })
+                        setFormData({
+                          ...formData,
+                          organization: e.target.value,
+                        })
                       }
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
                     />
                   </div>
 
@@ -371,13 +443,13 @@ export default function FutureActionSection() {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
+                      className="w-full px-4 py-2.5 rounded-lg border border-[#E8E2D7] bg-white text-sm text-[#2D3748] focus:outline-none focus:border-[#A21246]"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3.5 rounded-full bg-[#A21246] hover:bg-[#850D37] text-white text-sm font-semibold transition-all shadow-md mt-2 flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full py-3.5 rounded-xl bg-[#A21246] hover:bg-[#850D37] text-white text-sm font-semibold transition-all shadow-md mt-2 flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <span>Submit Request</span>
                     <ArrowRight className="w-4 h-4" />
@@ -386,7 +458,7 @@ export default function FutureActionSection() {
               </>
             ) : (
               <div className="py-8 text-center animate-in zoom-in-95 duration-200">
-                <div className="w-16 h-16 rounded-full bg-[#107C68]/10 text-[#107C68] flex items-center justify-center mx-auto mb-4 border border-[#107C68]/20">
+                <div className="w-16 h-16 rounded-xl bg-[#107C68]/10 text-[#107C68] flex items-center justify-center mx-auto mb-4 border border-[#107C68]/20">
                   <span className="text-2xl font-bold">✓</span>
                 </div>
                 <h4 className="font-serif text-[24px] font-bold text-[#04315D] mb-2">
@@ -398,7 +470,7 @@ export default function FutureActionSection() {
                 <button
                   type="button"
                   onClick={handleCloseModal}
-                  className="px-6 py-2.5 rounded-full bg-[#04315D] hover:bg-[#032547] text-white text-xs font-semibold transition-colors cursor-pointer"
+                  className="px-6 py-2.5 rounded-lg bg-[#04315D] hover:bg-[#032547] text-white text-xs font-semibold transition-colors cursor-pointer"
                 >
                   Close Window
                 </button>

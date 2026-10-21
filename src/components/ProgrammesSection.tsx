@@ -34,7 +34,7 @@ export default function ProgrammesSection() {
           </div>
 
           <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[52px] leading-[1.12] tracking-[-0.02em] text-[#04315D] font-normal">
-            What we build
+            What We Build
           </h2>
         </div>
 
@@ -46,7 +46,7 @@ export default function ProgrammesSection() {
             return (
               <div
                 key={prog.slug}
-                className="group relative bg-white border border-[#E8E2D7] rounded-3xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 hover:border-[#04315D]/40"
+                className="group relative bg-white border border-[#E8E2D7] rounded-2xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-[#04315D]/40"
               >
                 {/* Top Accent Color Line */}
                 <div

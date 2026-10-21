@@ -5,6 +5,7 @@ import UspSection from "@/components/UspSection";
 import LearningModelSection from "@/components/LearningModelSection";
 import ProgrammesSection from "@/components/ProgrammesSection";
 import FutureActionSection from "@/components/FutureActionSection";
+import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
 import FloatingCta from "@/components/FloatingCta";
 
@@ -31,6 +32,9 @@ export default function Home() {
 
       {/* Section 7: Programmes (What we build) */}
       <ProgrammesSection />
+
+      {/* Newsletter Subscription Section */}
+      <NewsletterSection />
 
       {/* Floating Sticky CTA on Scroll */}
       <FloatingCta />

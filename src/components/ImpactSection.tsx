@@ -208,7 +208,7 @@ export default function ImpactSection() {
             {ecosystem.map((entity, i) => (
               <span
                 key={entity}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-[#FAF8F5] border border-[#E8E2D7] hover:border-[#04315D]/40 text-[14px] sm:text-[15px] text-[#04315D] font-medium transition-all shadow-xs cursor-default"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white hover:bg-[#FAF8F5] border border-[#E8E2D7] hover:border-[#04315D]/40 text-[13.5px] sm:text-[14px] text-[#04315D] font-medium transition-all shadow-xs cursor-default"
               >
                 <span>{entity}</span>
                 {i < ecosystem.length - 1 && (
@@ -223,7 +223,7 @@ export default function ImpactSection() {
           {/* Link: See the evidence → */}
           <Link
             href="/#evidence"
-            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#A21246] hover:bg-[#850E38] text-white font-medium text-[15px] hover:gap-3.5 transition-all shadow-sm w-fit group"
+            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-[#A21246] hover:bg-[#850E38] text-white font-semibold text-[15px] hover:gap-3.5 transition-all shadow-sm w-fit group"
           >
             <span>See the evidence</span>
             <ArrowRight className="w-4 h-4 text-white transition-transform group-hover:translate-x-0.5" />

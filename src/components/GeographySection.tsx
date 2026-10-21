@@ -59,7 +59,7 @@ export default function GeographySection() {
 
             {/* Main Heading */}
             <h2 className="font-serif text-[32px] sm:text-[42px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-5 sm:mb-6">
-              Learning across different contexts
+              Learning Across Different Contexts
             </h2>
 
             {/* Sub-heading & Client Narrative */}

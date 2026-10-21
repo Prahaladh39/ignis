@@ -143,7 +143,7 @@ export default async function ProgrammeDetailPage({ params }: PageProps) {
                 Pedagogical Architecture
               </span>
               <h2 className="font-serif text-[30px] sm:text-[40px] text-[#04315D] leading-tight font-normal">
-                How this capability is built
+                How This Capability Is Built
               </h2>
             </div>
 
@@ -181,7 +181,7 @@ export default async function ProgrammeDetailPage({ params }: PageProps) {
                   Field Practice
                 </span>
                 <h2 className="font-serif text-[30px] sm:text-[38px] text-[#04315D] leading-tight font-normal mb-6">
-                  What learners actually do
+                  What Learners Actually Do
                 </h2>
                 <p className="text-[15px] sm:text-[16px] text-[#475569] leading-relaxed mb-6">
                   Ignis replaces passive memorization with active inquiry. In every classroom, learning connects directly to community problems, peer collaboration, and genuine student autonomy.
@@ -234,7 +234,7 @@ export default async function ProgrammeDetailPage({ params }: PageProps) {
                   Explore Further
                 </span>
                 <h3 className="font-serif text-[26px] sm:text-[32px] text-[#04315D] font-normal">
-                  The other pillars in our model
+                  Other Pillars in Our Model
                 </h3>
               </div>
               <Link

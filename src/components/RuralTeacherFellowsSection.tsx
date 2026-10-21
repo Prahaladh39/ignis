@@ -59,21 +59,9 @@ export default function RuralTeacherFellowsSection() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A21246]/10 border border-[#A21246]/20 text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-4">
-            <GraduationCap className="w-3.5 h-3.5" />
-            <span>Fellowship Initiative</span>
-          </div>
-
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#04315D] font-normal tracking-tight">
             Rural Teacher Fellows Programme
           </h2>
-
-          {/* Editorial Diamond Divider */}
-          <div className="flex items-center justify-center gap-4 my-5">
-            <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent to-[#A21246]/40" />
-            <div className="w-2 h-2 rotate-45 bg-[#A21246]" />
-            <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-l from-transparent to-[#A21246]/40" />
-          </div>
         </div>
 
         {/* Narrative & Highlights - 3 Column Grid */}

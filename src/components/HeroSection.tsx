@@ -29,7 +29,7 @@ export default function HeroSection() {
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-10 sm:pt-14 lg:pt-16 pb-14 sm:pb-18 lg:pb-24">
           <div className="w-full lg:max-w-[540px] xl:max-w-[600px] flex flex-col justify-center">
             
-            {/* Eyebrow / Tagline */}
+            {/* Eyebrow / Tagline: Restored to original */}
             <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
               <span className="w-6 h-[2px] bg-[#A21246]" aria-hidden="true" />
               <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
@@ -45,20 +45,101 @@ export default function HeroSection() {
               </span>
             </h1>
 
-            {/* Sub-head Paragraph */}
-            <p className="text-sm sm:text-[15px] leading-relaxed text-[#556987] max-w-[520px] font-normal mb-8 sm:mb-9">
-              Ignis integrates Life Skills with English, Science and Maths to help young learners build knowledge, confidence and agency to make decisions, solve problems, communicate and participate in the world around them.
+            {/* Sub-head Paragraph: Clearly articulates what Ignis is + collaboration with Non-Profits & NGOs */}
+            <p className="text-sm sm:text-[15px] leading-relaxed text-[#4A5568] max-w-[540px] font-normal mb-8 sm:mb-9">
+              <strong className="text-[#04315D] font-semibold">Ignis Careers</strong> is an education and life skills organisation. We integrate Life Skills into English, Science, and Maths — co-designing and scaling participatory learning programmes alongside non-profit organisations, CSR foundations, and government school systems to build real agency, voice, and problem-solving capabilities in underserved learners.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-5">
+            {/* Single CTA Button */}
+            <div className="flex flex-wrap items-center gap-4 sm:gap-5 mb-8">
               <Link
                 href="#work-with-us"
-                className="inline-flex items-center justify-center gap-2.5 bg-[#A21246] hover:bg-[#860E3A] text-white text-[15px] font-medium px-7 sm:px-8 py-3.5 rounded-full shadow-md shadow-[#A21246]/15 hover:shadow-lg hover:shadow-[#A21246]/25 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center justify-center gap-2.5 bg-[#A21246] hover:bg-[#860E3A] text-white text-[15px] font-semibold px-7 sm:px-8 py-3.5 rounded-xl shadow-md shadow-[#A21246]/15 hover:shadow-lg hover:shadow-[#A21246]/25 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Partner with Ignis</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
+            </div>
+
+            {/* Overlapping Avatar Stack & Impact Proof (Mobile S & M Optimized) */}
+            <div className="pt-5 border-t border-[#E8E2D7]/80 flex items-center gap-3 sm:gap-3.5">
+              {/* Overlapping circular partner logos */}
+              <div className="flex items-center -space-x-2.5 shrink-0 py-0.5">
+                <div
+                  title="Educate Girls"
+                  className="inline-block w-9 h-9 xs:w-10 xs:h-10 sm:w-[42px] sm:h-[42px] rounded-full ring-2 ring-black/25 border border-black/15 bg-white shadow-xs overflow-hidden relative"
+                >
+                  <Image
+                    src="/images/partners/Picture2.png"
+                    alt="Educate Girls"
+                    fill
+                    sizes="42px"
+                    className="object-contain p-1"
+                  />
+                </div>
+
+                <div
+                  title="eVidyaloka"
+                  className="inline-block w-9 h-9 xs:w-10 xs:h-10 sm:w-[42px] sm:h-[42px] rounded-full ring-2 ring-black/25 border border-black/15 bg-white shadow-xs overflow-hidden relative"
+                >
+                  <Image
+                    src="/images/partners/Picture1.png"
+                    alt="eVidyaloka"
+                    fill
+                    sizes="42px"
+                    className="object-contain p-1"
+                  />
+                </div>
+
+                <div
+                  title="Deshpande Foundation"
+                  className="inline-block w-9 h-9 xs:w-10 xs:h-10 sm:w-[42px] sm:h-[42px] rounded-full ring-2 ring-black/25 border border-black/15 bg-white shadow-xs overflow-hidden relative"
+                >
+                  <Image
+                    src="/images/partners/ab-3-1.jpg"
+                    alt="Deshpande Foundation"
+                    fill
+                    sizes="42px"
+                    className="object-contain p-1"
+                  />
+                </div>
+
+                <div
+                  title="Acumen"
+                  className="inline-block w-9 h-9 xs:w-10 xs:h-10 sm:w-[42px] sm:h-[42px] rounded-full ring-2 ring-black/25 border border-black/15 bg-white shadow-xs overflow-hidden relative"
+                >
+                  <Image
+                    src="/images/partners/ab-1-3.jpg"
+                    alt="Acumen"
+                    fill
+                    sizes="42px"
+                    className="object-contain p-1"
+                  />
+                </div>
+
+                <div
+                  title="AP Skill Development"
+                  className="inline-block w-9 h-9 xs:w-10 xs:h-10 sm:w-[42px] sm:h-[42px] rounded-full ring-2 ring-black/25 border border-black/15 bg-white shadow-xs overflow-hidden relative"
+                >
+                  <Image
+                    src="/images/partners/ab-2-1.jpg"
+                    alt="APSSDC"
+                    fill
+                    sizes="42px"
+                    className="object-contain p-1"
+                  />
+                </div>
+              </div>
+
+              {/* Text highlighting non-profit & NGO partnerships - clean responsive stack */}
+              <div className="flex-1 min-w-0 text-[12.5px] xs:text-[13px] sm:text-[14px] leading-[1.3] text-[#04315D]">
+                <span className="font-bold text-[#A21246] block xs:inline">
+                  Partnered with leading{" "}
+                </span>
+                <span className="font-semibold text-[#04315D]">
+                  non-profits &amp; NGOs across India
+                </span>
+              </div>
             </div>
           </div>
 

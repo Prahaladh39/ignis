@@ -117,15 +117,15 @@ export default function MetricsSection() {
           <div className="lg:col-span-7 w-full flex flex-col">
             {/* Title directly on top of the first card / cards row */}
             <div className="mb-3.5 sm:mb-4">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="w-5 h-[2px] bg-[#A21246]" aria-hidden="true" />
+              <div className="flex items-center gap-2.5 mb-1.5">
+                <span className="w-8 h-[3px] bg-[#A21246] rounded-full" aria-hidden="true" />
                 <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.16em] uppercase text-[#A21246]">
-                  Measurable Reach & Scale
+                  Our Journey
                 </span>
               </div>
 
               <h2 className="font-serif text-[26px] sm:text-[32px] lg:text-[36px] leading-[1.12] tracking-[-0.02em] text-[#04315D] font-normal">
-                Proven impact across classrooms
+                Proven Impact Across Classrooms
               </h2>
             </div>
 
@@ -160,13 +160,14 @@ export default function MetricsSection() {
                     </div>
                   </div>
 
-                  {/* Bottom: Accent bar & Darkened Sublabel */}
+                  {/* Bottom: Accent timeline/progress bar & Darkened Sublabel */}
                   <div className="pt-3 border-t border-[#E8E2D7]">
                     <div className="text-[12.5px] text-[#1E293B] font-medium leading-tight">
                       {point.sublabel}
                     </div>
-                    <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-2.5">
-                      <div className={`h-full ${point.accentBar} w-10 group-hover:w-16 transition-all duration-300`} />
+                    {/* Increased thickness of timeline/progress line */}
+                    <div className="w-full h-1.5 bg-[#E8E2D7] rounded-full overflow-hidden mt-3">
+                      <div className={`h-full ${point.accentBar} w-12 group-hover:w-24 transition-all duration-300 rounded-full`} />
                     </div>
                   </div>
                 </div>

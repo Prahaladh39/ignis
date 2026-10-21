@@ -178,7 +178,7 @@ export default function LearnerAgencySection() {
             </div>
 
             <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[50px] leading-[1.12] tracking-[-0.02em] text-[#04315D] font-normal">
-              From knowledge to capability
+              From Knowledge to Capability
             </h2>
           </div>
 
@@ -283,7 +283,7 @@ export default function LearnerAgencySection() {
         {/* Sub-heading for Agency */}
         <div className="max-w-[800px] mb-8 sm:mb-10">
           <h3 className="font-serif text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.18] tracking-[-0.02em] text-[#04315D] font-normal">
-            What does learner agency look like?
+            What Does Learner Agency Look Like?
           </h3>
         </div>
 
@@ -293,7 +293,7 @@ export default function LearnerAgencySection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-7 items-stretch">
           
           {/* Left Column (Span 5): Authentic Student Photograph with Quote */}
-          <div className="lg:col-span-5 rounded-3xl overflow-hidden relative min-h-[440px] sm:min-h-[520px] lg:min-h-full flex flex-col justify-end p-6 sm:p-8 bg-[#F4EFE6] border border-[#E8E2D7]">
+          <div className="lg:col-span-5 rounded-2xl overflow-hidden relative min-h-[440px] sm:min-h-[520px] lg:min-h-full flex flex-col justify-end p-6 sm:p-8 bg-[#F4EFE6] border border-[#E8E2D7]">
             <Image
               src="/images/agency-boy-hd.jpg"
               alt="Ignis learner looking forward with curiosity and agency"
@@ -304,7 +304,7 @@ export default function LearnerAgencySection() {
             />
 
             {/* Frosted Glass Conviction Badge (Client's exact closing statement) */}
-            <div className="relative z-10 bg-white/95 backdrop-blur-md border border-[#E8E2D7] p-5 sm:p-6 rounded-2xl shadow-lg mt-auto">
+            <div className="relative z-10 bg-white/95 backdrop-blur-md border border-[#E8E2D7] p-5 sm:p-6 rounded-xl shadow-lg mt-auto">
               <span className="inline-block text-[11px] font-bold tracking-[0.16em] uppercase text-[#A21246] mb-2">
                 Core Conviction
               </span>
@@ -326,7 +326,7 @@ export default function LearnerAgencySection() {
                   onMouseEnter={() => setActiveStep(card.id)}
                   onMouseLeave={() => setActiveStep(null)}
                   onClick={() => setActiveStep(isSelected ? null : card.id)}
-                  className={`bg-white border rounded-3xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 cursor-pointer group ${
+                  className={`bg-white border rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 cursor-pointer group ${
                     isSelected
                       ? card.activeStyle
                       : `border-[#E8E2D7] ${card.borderHover}`
@@ -347,7 +347,7 @@ export default function LearnerAgencySection() {
                       </div>
 
                       {/* Pill indicating connected learning step */}
-                      <span className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#F8F5EF] text-[#64748B] border border-[#E8E2D7]">
+                      <span className="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-[#F8F5EF] text-[#64748B] border border-[#E8E2D7]">
                         Step {card.stepNum}
                       </span>
                     </div>

@@ -59,9 +59,9 @@ export default function UspSection() {
 
               {/* Headline */}
               <h2 className="font-serif text-[30px] sm:text-[36px] lg:text-[40px] leading-[1.15] tracking-[-0.02em] text-[#04315D] font-normal mb-4">
-                Life Skills are not an extra subject.{" "}
+                Life Skills Are Not an Extra Subject.{" "}
                 <span className="text-[#AF1B49] italic font-serif block sm:inline">
-                  They are what learning is for.
+                  They Are What Learning Is For.
                 </span>
               </h2>
 
