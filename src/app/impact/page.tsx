@@ -15,6 +15,10 @@ import {
   GraduationCap,
   Sparkles,
   ArrowRight,
+  HeartHandshake,
+  Leaf,
+  Briefcase,
+  Zap,
 } from "lucide-react";
 
 interface CounterProps {
@@ -435,122 +439,168 @@ export default function ImpactPage() {
           </div>
 
           {/* Section Header & Narrative */}
-          <div className="max-w-3xl mb-6 sm:mb-8">
+          <div className="max-w-3xl mb-8 sm:mb-10">
             <h2 className="font-serif text-[30px] sm:text-[38px] lg:text-[42px] font-bold text-[#04315D] tracking-tight leading-[1.12] mb-3">
               Counting Learners Is Not Enough
             </h2>
             <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-3">
-              Reach tells us who we serve. Engagement tells us how deeply they participate. Outcomes tell us what difference the experience makes.
+              Reach tells us who we serve. Engagement tells us how deeply they participate. Real outcomes tell us how learning transforms lives, livelihoods, and communities.
             </p>
             <p className="text-sm sm:text-[15px] text-[#04315D] font-medium leading-relaxed">
-              Our impact framework therefore looks across four dimensions:
+              Our outcome measurement framework evaluates sustainable transformation across five key pillars:
             </p>
           </div>
 
-          {/* Four Dimensions Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          {/* 5 Impact Outcome Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             
-            {/* Dimension 1: REACH */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
+            {/* Pillar 1: Gender Equity */}
+            <div className="group relative bg-white border border-[#E8E2D7] hover:border-[#E879F9]/50 rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#A21246] via-[#D946EF] to-[#EC4899]" />
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#04315D]/10 text-[#04315D] flex items-center justify-center">
-                    <Users className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-[#FDF2F8] border border-[#FBCFE8] text-[#A21246] flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform duration-200">
+                    <HeartHandshake className="w-6 h-6 text-[#A21246]" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
-                    01
+                  <span className="text-[11px] font-mono font-bold tracking-wider text-[#A21246] bg-[#FDF2F8] px-2.5 py-1 rounded-full border border-[#FCE7F3]">
+                    OUTCOME 01
                   </span>
                 </div>
-                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#04315D] uppercase mb-1.5">
-                  REACH
+
+                <div className="text-[11px] font-mono font-bold tracking-widest text-[#A21246] uppercase mb-1.5">
+                  EQUITY &amp; INCLUSION
                 </div>
-                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
-                  Who are we reaching?
+                <h3 className="font-serif text-[21px] sm:text-[23px] font-bold text-[#04315D] mb-3 leading-snug group-hover:text-[#A21246] transition-colors">
+                  Gender Equity
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
-                  Learners, schools, communities and partner organisations.
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed mb-4">
+                  Dismantling classroom biases and building equal voice, confidence, and participation for adolescent girls. Learners challenge gender stereotypes through participatory dialogue, collaborative leadership, and peer community projects.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#04315D] w-12" />
+
+              <div className="pt-4 border-t border-[#F1EBE1] flex items-center justify-between text-xs font-semibold text-[#A21246]">
+                <span>Voice &bull; Safety &bull; Leadership</span>
+                <span className="w-2 h-2 rounded-full bg-[#A21246]" />
               </div>
             </div>
 
-            {/* Dimension 2: ENGAGEMENT */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
+            {/* Pillar 2: Environmental Sustainability */}
+            <div className="group relative bg-white border border-[#E8E2D7] hover:border-[#10B981]/50 rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#059669] via-[#10B981] to-[#34D399]" />
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#A21246]/10 text-[#A21246] flex items-center justify-center">
-                    <Activity className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-[#ECFDF5] border border-[#A7F3D0] text-[#059669] flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform duration-200">
+                    <Leaf className="w-6 h-6 text-[#059669]" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
-                    02
+                  <span className="text-[11px] font-mono font-bold tracking-wider text-[#059669] bg-[#ECFDF5] px-2.5 py-1 rounded-full border border-[#D1FAE5]">
+                    OUTCOME 02
                   </span>
                 </div>
-                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#A21246] uppercase mb-1.5">
-                  ENGAGEMENT
+
+                <div className="text-[11px] font-mono font-bold tracking-widest text-[#059669] uppercase mb-1.5">
+                  PLANET &amp; CLIMATE CITIZENSHIP
                 </div>
-                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
-                  How are learners participating?
+                <h3 className="font-serif text-[21px] sm:text-[23px] font-bold text-[#04315D] mb-3 leading-snug group-hover:text-[#059669] transition-colors">
+                  Environmental Sustainability
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
-                  Participation, duration and sustained engagement.
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed mb-4">
+                  Translating ecological science into local action. Students conduct environmental audits, investigate biodiversity and water resources, and design sustainable community waste management and conservation initiatives.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#A21246] w-12" />
+
+              <div className="pt-4 border-t border-[#F1EBE1] flex items-center justify-between text-xs font-semibold text-[#059669]">
+                <span>Climate Literacy &bull; Local Action</span>
+                <span className="w-2 h-2 rounded-full bg-[#059669]" />
               </div>
             </div>
 
-            {/* Dimension 3: LEARNING */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
+            {/* Pillar 3: Employment */}
+            <div className="group relative bg-white border border-[#E8E2D7] hover:border-[#2563EB]/50 rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#1D4ED8] via-[#2563EB] to-[#60A5FA]" />
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#107C68]/10 text-[#107C68] flex items-center justify-center">
-                    <GraduationCap className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-[#EFF6FF] border border-[#BFDBFE] text-[#1D4ED8] flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform duration-200">
+                    <Briefcase className="w-6 h-6 text-[#1D4ED8]" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
-                    03
+                  <span className="text-[11px] font-mono font-bold tracking-wider text-[#1D4ED8] bg-[#EFF6FF] px-2.5 py-1 rounded-full border border-[#DBEAFE]">
+                    OUTCOME 03
                   </span>
                 </div>
-                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#107C68] uppercase mb-1.5">
-                  LEARNING
+
+                <div className="text-[11px] font-mono font-bold tracking-widest text-[#1D4ED8] uppercase mb-1.5">
+                  WORKFORCE READINESS
                 </div>
-                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
-                  What are learners gaining?
+                <h3 className="font-serif text-[21px] sm:text-[23px] font-bold text-[#04315D] mb-3 leading-snug group-hover:text-[#1D4ED8] transition-colors">
+                  Employment
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
-                  Knowledge, skills and capabilities relevant to each programme.
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed mb-4">
+                  Equipping youth with practical English communication, workplace critical thinking, collaborative problem-solving, and professional digital fluency required for formal employment and sustainable micro-entrepreneurship.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#107C68] w-12" />
+
+              <div className="pt-4 border-t border-[#F1EBE1] flex items-center justify-between text-xs font-semibold text-[#1D4ED8]">
+                <span>21st Century Skills &bull; Livelihoods</span>
+                <span className="w-2 h-2 rounded-full bg-[#1D4ED8]" />
               </div>
             </div>
 
-            {/* Dimension 4: OPPORTUNITY */}
-            <div className="bg-[#FAF6F0]/70 border border-[#E8E2D7] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-2xs">
+            {/* Pillar 4: Enrollment in Higher Education */}
+            <div className="group relative bg-white border border-[#E8E2D7] hover:border-[#D97706]/50 rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#B45309] via-[#D97706] to-[#FBBF24]" />
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-9 h-9 rounded-xl bg-[#AF1B49]/10 text-[#AF1B49] flex items-center justify-center">
-                    <Sparkles className="w-4.5 h-4.5" />
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-[#FFFBEB] border border-[#FDE68A] text-[#B45309] flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform duration-200">
+                    <GraduationCap className="w-6 h-6 text-[#B45309]" />
                   </div>
-                  <span className="text-[10.5px] font-mono text-[#94A3B8] font-bold tracking-widest uppercase">
-                    04
+                  <span className="text-[11px] font-mono font-bold tracking-wider text-[#B45309] bg-[#FFFBEB] px-2.5 py-1 rounded-full border border-[#FEF3C7]">
+                    OUTCOME 04
                   </span>
                 </div>
-                <div className="text-[10.5px] font-mono font-bold tracking-widest text-[#AF1B49] uppercase mb-1.5">
-                  OPPORTUNITY
+
+                <div className="text-[11px] font-mono font-bold tracking-widest text-[#B45309] uppercase mb-1.5">
+                  ACADEMIC PERSISTENCE
                 </div>
-                <h3 className="font-serif text-[18px] sm:text-[20px] font-semibold text-[#04315D] mb-2 leading-snug">
-                  What can learning enable?
+                <h3 className="font-serif text-[21px] sm:text-[23px] font-bold text-[#04315D] mb-3 leading-snug group-hover:text-[#B45309] transition-colors">
+                  Enrollment in Higher Education
                 </h3>
-                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed">
-                  Longer-term educational, personal and economic opportunities.
+                <p className="text-sm sm:text-[14.5px] text-[#556987] leading-relaxed mb-4">
+                  Increasing school retention, secondary graduation rates, and college transition among first-generation learners. Building academic self-efficacy and aspiration pathways to universities, polytechnics, and vocational diplomas.
                 </p>
               </div>
-              <div className="w-full h-1 bg-[#E8E2D7] rounded-full overflow-hidden mt-5">
-                <div className="h-full bg-[#AF1B49] w-12" />
+
+              <div className="pt-4 border-t border-[#F1EBE1] flex items-center justify-between text-xs font-semibold text-[#B45309]">
+                <span>Retention &bull; College Transitions</span>
+                <span className="w-2 h-2 rounded-full bg-[#B45309]" />
+              </div>
+            </div>
+
+            {/* Pillar 5: Agency */}
+            <div className="group relative bg-white border border-[#E8E2D7] hover:border-[#7C3AED]/50 rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden md:col-span-2 lg:col-span-2">
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#A78BFA]" />
+              <div>
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-[#F5F3FF] border border-[#DDD6FE] text-[#6D28D9] flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform duration-200">
+                    <Zap className="w-6 h-6 text-[#6D28D9]" />
+                  </div>
+                  <span className="text-[11px] font-mono font-bold tracking-wider text-[#6D28D9] bg-[#F5F3FF] px-2.5 py-1 rounded-full border border-[#EDE9FE]">
+                    OUTCOME 05 &bull; CORE FOUNDATION
+                  </span>
+                </div>
+
+                <div className="text-[11px] font-mono font-bold tracking-widest text-[#6D28D9] uppercase mb-1.5">
+                  AUTONOMY &amp; SELF-DETERMINATION
+                </div>
+                <h3 className="font-serif text-[21px] sm:text-[24px] font-bold text-[#04315D] mb-3 leading-snug group-hover:text-[#6D28D9] transition-colors">
+                  Agency
+                </h3>
+                <p className="text-sm sm:text-[15px] text-[#556987] leading-relaxed mb-4 max-w-2xl">
+                  The foundational catalyst of all Ignis initiatives: nurturing young people's capacity to set goals, ask critical questions, exercise self-advocacy, and make informed choices for their families, health, and communities.
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-[#F1EBE1] flex items-center justify-between text-xs font-semibold text-[#6D28D9]">
+                <span>Critical Thinking &bull; Self-Advocacy &bull; Civic Action</span>
+                <span className="w-2 h-2 rounded-full bg-[#6D28D9]" />
               </div>
             </div>
 

@@ -159,8 +159,8 @@ export default function CsrSupportPage() {
         </div>
       </section>
 
-      {/* Section 1: Our Partners (Marquee Scroller) */}
-      <PartnersMarquee />
+      {/* Section 1: Our Clients (Marquee Scroller) */}
+      <PartnersMarquee showBadge={false} heading="Our Clients" />
 
       {/* Section 2: Rural Teacher Fellows Programme */}
       <RuralTeacherFellowsSection />

@@ -20,6 +20,7 @@ const ICON_MAP = {
   atom: Atom,
   grad: GraduationCap,
   network: Network,
+  spark: Sparkles,
 };
 
 interface PageProps {

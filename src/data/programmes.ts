@@ -6,7 +6,7 @@ export interface ProgrammeItem {
   description: string;
   brandColor: string;
   badgeBg: string;
-  iconName: "message" | "atom" | "grad" | "network";
+  iconName: "message" | "atom" | "grad" | "network" | "spark";
   overview: string;
   keyPillars: {
     title: string;
@@ -22,97 +22,97 @@ export interface ProgrammeItem {
 
 export const PROGRAMMES_DATA: ProgrammeItem[] = [
   {
-    slug: "english-life-skills",
+    slug: "life-skills",
     num: "01",
-    title: "English + Life Skills",
-    eyebrow: "Communication & Expression",
+    title: "Life Skills",
+    eyebrow: "Agency, Confidence & Self-Determination",
     description:
-      "Build communication, confidence and everyday capabilities through contextual, participatory learning.",
-    brandColor: "#96163F",
-    badgeBg: "bg-[#96163F]/10 text-[#96163F]",
-    iconName: "message",
+      "Nurture critical thinking, decision-making, empathy and real-world agency for lifelong capability.",
+    brandColor: "#A21246",
+    badgeBg: "bg-[#A21246]/10 text-[#A21246]",
+    iconName: "spark",
     overview:
-      "At Ignis, English is not taught as a foreign academic subject for exam scores, but as a practical medium for voice, civic dialogue, and self-advocacy. By integrating Life Skills directly into English language learning, students develop the self-assurance to articulate ideas, challenge assumptions, and participate actively in society.",
+      "At Ignis, Life Skills are not taught as an abstract theoretical lecture, but as an experiential practice embedded in every interaction. Through reflective dialogue, collaborative teamwork, self-awareness exercises, and social-emotional learning, students build the inner resilience, ethical clarity, and confidence to make decisions and shape their own futures.",
     keyPillars: [
       {
-        title: "Contextual Storytelling",
+        title: "Agency & Decision-Making",
         description:
-          "Literature and reading material anchored in the lived realities and regional cultures of Indian students rather than distant, alien contexts.",
+          "Empowering young people to evaluate choices, weigh consequences, set personal goals, and advocate for themselves and their peers.",
       },
       {
-        title: "Participatory Speaking Circles",
+        title: "Critical & Creative Thinking",
         description:
-          "Replacing passive grammar memorization with active peer debates, structured questioning, and student-led presentations.",
+          "Moving beyond rote acceptance of information to question assumptions, analyze complex situations, and design innovative solutions.",
       },
       {
-        title: "Bilingual Scaffolding",
+        title: "Empathy & Interpersonal Dialogue",
         description:
-          "Honoring regional mother tongues (Telugu, Odia, Hindi, Kannada, Marathi) as intellectual assets that bridge into fluent English communication.",
+          "Developing active listening, emotional regulation, mutual respect, and collaborative problem-solving across diverse community backgrounds.",
       },
       {
-        title: "Everyday Life Capabilities",
+        title: "Civic & Community Leadership",
         description:
-          "Practice navigating real-life scenarios: speaking to officials, conducting community interviews, collaborating in teams, and expressing empathy.",
+          "Translating personal capability into collective action—leading initiatives that address local challenges from gender equity to public health.",
       },
     ],
     realLifeExamples: [
-      "Grade 8 students in rural Mahabubnagar surveyed local water quality and drafted a bilingual petition presented directly to their village Gram Panchayat.",
-      "Learners organize and moderate youth parliament discussions addressing school safety, gender equity, and peer support.",
-      "Conducting structured oral interviews with community elders to compile regional histories into published school gazettes.",
+      "Adolescent girls lead peer support circles addressing school retention, self-advocacy, and emotional well-being.",
+      "Students organize community forums to identify local village challenges and present citizen petitions to local civic leaders.",
+      "Peer mediation programs that resolve classroom conflicts constructively through guided dialogue and empathy.",
     ],
     agencyOutcome:
-      "Students transition from hesitant non-speakers into confident communicators who can lead discussions, defend their rights, and make their voices heard.",
+      "Learners transition from passive recipients of instruction into proactive agents who navigate life, education, and relationships with confidence.",
     metrics: [
-      { stat: "404,000+", label: "Direct Learners Enrolled" },
-      { stat: "+42%", label: "Increase in Spontaneous Oral Expression" },
-      { stat: "1,200+", label: "Participating Schools" },
+      { stat: "600,000+", label: "Learners Empowered" },
+      { stat: "+48%", label: "Growth in Self-Efficacy & Decision-Making" },
+      { stat: "1,500+", label: "Partner Schools & Centers" },
     ],
   },
   {
-    slug: "science-maths",
+    slug: "english-science-maths",
     num: "02",
-    title: "Science + Maths",
-    eyebrow: "Inquiry & Quantitative Reasoning",
+    title: "English + Science + Maths",
+    eyebrow: "Applied Foundational Subjects",
     description:
-      "Turn concepts into exploration, observation, problem-solving and real-world understanding.",
+      "Integrate communication, inquiry and quantitative problem-solving through contextual, hands-on learning.",
     brandColor: "#0D5C4D",
     badgeBg: "bg-[#0D5C4D]/10 text-[#0D5C4D]",
     iconName: "atom",
     overview:
-      "Science and Mathematics come alive when students explore real phenomena around them. Rather than memorizing formulas from chalkboards, Ignis students formulate questions, build low-cost hands-on experiments, and apply mathematical reasoning to community dilemmas—from agricultural economics to public health.",
+      "Ignis integrates English, Science, and Mathematics into an interconnected, experiential learning curriculum. Rather than memorizing abstract formulas or grammar rules for exams, students explore phenomena around them, articulate evidence-based arguments, and apply mathematical reasoning to everyday community challenges.",
     keyPillars: [
       {
-        title: "Low-Cost Tactile Experiments",
+        title: "Contextual Language Fluency",
         description:
-          "Scientific investigation without expensive laboratory barriers, using locally accessible household and environmental materials.",
+          "English learned as a tool for voice, expression, and inquiry through regional stories, structured speaking circles, and student presentations.",
       },
       {
-        title: "Real-World Quantitative Literacy",
+        title: "Tactile Science Experiments",
         description:
-          "Math applied to unit economics, household budgeting, crop yield estimation, and discerning high-interest debt cycles.",
+          "Low-cost hands-on investigations using local materials, turning classrooms into vibrant discovery spaces without expensive lab equipment.",
       },
       {
-        title: "Critical Skepticism & Evidence",
+        title: "Real-World Quantitative Reasoning",
         description:
-          "Empirical observation that encourages learners to question superstitions, test hypotheses, and demand verifiable evidence.",
+          "Mathematics connected to everyday life: budgeting, data interpretation, agricultural economics, and practical problem-solving.",
       },
       {
-        title: "Environmental & Civic Science",
+        title: "Integrated Problem Solving",
         description:
-          "Direct study of local ecosystems: soil testing, drinking water quality, seasonal weather cycles, and community energy consumption.",
+          "Cross-disciplinary projects that combine mathematical measurement, scientific inquiry, and English communication to address real-world questions.",
       },
     ],
     realLifeExamples: [
-      "Students in Chittoor tested soil pH levels across local farmlands to calculate optimal fertilizer ratios alongside their agricultural parents.",
-      "Analyzing electricity meter readings and transformer loads to propose school-wide energy conservation practices.",
-      "Calculating fair mandi market pricing using algebraic ratios, protecting smallholder farming families from exploitative middlemen.",
+      "Students conduct local water quality tests in Science, calculate purification ratios in Maths, and present findings in English to school assemblies.",
+      "Designing school energy conservation audits by reading meters, calculating power savings, and publishing bilingual community awareness posters.",
+      "Surveying local agricultural yields and market prices to model fair pricing strategies alongside farming families.",
     ],
     agencyOutcome:
-      "Learners stop fearing mathematical numbers and scientific jargon, using both as essential decision-making tools in their everyday lives.",
+      "Students overcome fear of subjects, building conceptual mastery and practical capabilities that connect directly to their lives and aspirations.",
     metrics: [
-      { stat: "850+", label: "School Science Inquiries" },
-      { stat: "94%", label: "Concept Mastery in Applied Scenarios" },
-      { stat: "180,000+", label: "STEM Learners Impacted" },
+      { stat: "450,000+", label: "Integrated Subject Learners" },
+      { stat: "92%", label: "Applied Concept Mastery Rate" },
+      { stat: "2,000+", label: "Hands-On Experiments Completed" },
     ],
   },
   {

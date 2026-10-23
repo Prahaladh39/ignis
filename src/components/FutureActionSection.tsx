@@ -120,7 +120,6 @@ const CARDS: CardData[] = [
       highlight: "contextual and technology-enabled learning.",
     },
     icons: [{ Icon: TrendIcon, tile: tiles.crimson }],
-    badge: "✦ Strategic scale",
     Illustration: GrowthIllustration,
     illustrationMinH: "min-h-[100px]",
     cta: { label: "Explore funding routes", modalAudience: "With Funders & Investors" },

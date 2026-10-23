@@ -109,8 +109,14 @@ const DEFAULT_PARTNERS: Partner[] = [
 
 export default function PartnersMarquee({
   partners = DEFAULT_PARTNERS,
+  badgeTitle = "Trusted Collaborations",
+  heading = "Our Partners",
+  showBadge = true,
 }: {
   partners?: Partner[];
+  badgeTitle?: string;
+  heading?: string;
+  showBadge?: boolean;
 }) {
   const [selectedPartner, setSelectedPartner] = useState<Partner | null>(null);
 
@@ -139,12 +145,14 @@ export default function PartnersMarquee({
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <div className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#F8F5EF] border border-[#E2DDD5] shadow-xs text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-4">
-            <span>Trusted Collaborations</span>
-          </div>
+          {showBadge && (
+            <div className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#F8F5EF] border border-[#E2DDD5] shadow-xs text-xs font-semibold tracking-wider text-[#A21246] uppercase mb-4">
+              <span>{badgeTitle}</span>
+            </div>
+          )}
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#04315D] font-normal tracking-tight mb-4">
-            Our Partners
+            {heading}
           </h2>
 
           <p className="text-[#556987] text-sm sm:text-[15px] leading-relaxed font-normal">

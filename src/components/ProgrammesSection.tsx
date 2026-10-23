@@ -7,6 +7,7 @@ import {
   GraduationCap,
   Network,
   ArrowRight,
+  Sparkles,
 } from "lucide-react";
 import { PROGRAMMES_DATA } from "@/data/programmes";
 
@@ -15,6 +16,7 @@ const ICON_MAP = {
   atom: Atom,
   grad: GraduationCap,
   network: Network,
+  spark: Sparkles,
 };
 
 export default function ProgrammesSection() {
