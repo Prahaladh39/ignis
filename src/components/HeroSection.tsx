@@ -131,13 +131,13 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Text highlighting non-profit & NGO partnerships - clean responsive stack */}
+              {/* Text highlighting non-profit partnerships - clean responsive stack */}
               <div className="flex-1 min-w-0 text-[12.5px] xs:text-[13px] sm:text-[14px] leading-[1.3] text-[#04315D]">
                 <span className="font-bold text-[#A21246] block xs:inline">
                   Partnered with leading{" "}
                 </span>
                 <span className="font-semibold text-[#04315D]">
-                  non-profits &amp; NGOs across India
+                  non-profit organisations across India
                 </span>
               </div>
             </div>
