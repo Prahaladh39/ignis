@@ -39,18 +39,18 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs sm:text-sm text-white/70">
               <li>
                 <Link
-                  href="/programmes/english-life-skills"
+                  href="/programmes/life-skills-english"
                   className="hover:text-white transition-colors"
                 >
-                  English + Life Skills
+                  Life Skills + English
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/programmes/science-maths"
+                  href="/programmes/life-skills-science-maths"
                   className="hover:text-white transition-colors"
                 >
-                  Science + Maths
+                  Life Skills + Science + Maths
                 </Link>
               </li>
               <li>
