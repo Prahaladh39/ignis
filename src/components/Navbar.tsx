@@ -30,6 +30,25 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   {
+    label: "About Us",
+    href: "/about",
+    sections: [
+      { title: "Vision & Mission", href: "/about#vision-mission" },
+      { title: "Our Priorities", href: "/about#priorities" },
+      { title: "Our Story", href: "/about#story" },
+    ],
+  },
+  {
+    label: "For Schools",
+    href: "/for-schools",
+    sections: [
+      { title: "English & Life Skills Lab (ELSL)", href: "/for-schools#elsl", tag: "Grades 1–10" },
+      { title: "STEM Labs", href: "/for-schools#stem-labs", tag: "Inquiry" },
+      { title: "Career Awareness Program", href: "/for-schools#career-awareness", tag: "Grades 8–12" },
+      { title: "Why Schools Choose Ignis", href: "/for-schools#why-schools", tag: "Turnkey" },
+    ],
+  },
+  {
     label: "Impact",
     href: "/impact",
     sections: [

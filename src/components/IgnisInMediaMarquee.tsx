@@ -61,13 +61,15 @@ const DEFAULT_MEDIA: MediaOutlet[] = [
 
 export default function IgnisInMediaMarquee({
   mediaList = DEFAULT_MEDIA,
+  className = "",
 }: {
   mediaList?: MediaOutlet[];
+  className?: string;
 }) {
   const marqueeItems = [...mediaList, ...mediaList];
 
   return (
-    <section className="relative py-10 sm:py-14 bg-white overflow-hidden border-b border-[#E8E2D7]">
+    <section className={`relative py-10 sm:py-14 bg-white overflow-hidden border-b border-[#E8E2D7] ${className}`}>
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
